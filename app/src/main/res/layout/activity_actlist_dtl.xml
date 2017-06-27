@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg">
+
+    <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+        android:id="@+id/pullToRefreshRecycleView"
+        style="@style/FHRefreshStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/LStickky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_top"
+        android:visibility="gone" />
+</FrameLayout>
+

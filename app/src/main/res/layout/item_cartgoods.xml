@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/LNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="@dimen/dp_of_30"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:button="@drawable/selector_checkbox_red_gray"
+            android:checked="true"
+            android:textColor="@color/color_33" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_12"
+            android:layout_marginTop="@dimen/dp_of_12"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_of_12"
+                android:layout_marginTop="@dimen/dp_of_6"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/sdv"
+                        android:layout_width="@dimen/dp_of_100"
+                        android:layout_height="@dimen/dp_of_100"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_goods_img" />
+
+                    <ImageView
+                        android:id="@+id/iv_top"
+                        android:layout_width="@dimen/dp_of_60"
+                        android:layout_height="@dimen/dp_of_60"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageView
+                        android:id="@+id/iv_flag_global"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/flag_global"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/LClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <!--国家旗帜 与 描述-->
+                        <LinearLayout
+                            android:id="@+id/ll_nation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/dp_of_2"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv_nation_flag"
+                                android:layout_width="@dimen/dp_of_20"
+                                android:layout_height="@dimen/dp_of_14"
+                                android:contentDescription="@string/app_name"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_banner" />
+
+                            <TextView
+                                android:id="@+id/tv_nation_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_of_6"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@string/app_name"
+                                android:textColor="@color/color_99"
+                                android:textSize="@dimen/sp_of_12" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_of_10"
+                            android:layout_marginTop="@dimen/dp_of_10"
+                            android:lineSpacingExtra="@dimen/dp_of_5"
+                            android:lines="2"
+                            android:ellipsize="end"
+                            android:text="@string/app_name"
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/sp_of_14"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/app_name"
+                            android:textColor="@color/color_99"
+                            android:textSize="@dimen/sp_of_12"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_price_and_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_of_10"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="@string/nine"
+                            android:textColor="@color/fh_red"
+                            android:textSize="@dimen/sp_of_15"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_of_15"
+                            android:background="@drawable/selector_stroke"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_minus"
+                                android:layout_width="@dimen/dp_of_30"
+                                android:layout_height="@dimen/dp_of_30"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/color_66" />
+
+                            <View
+                                android:layout_width="@dimen/line_width"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_e3" />
+
+                            <TextView
+                                android:id="@+id/tv_buy_num"
+                                android:layout_width="@dimen/dp_of_50"
+                                android:layout_height="@dimen/dp_of_30"
+                                android:gravity="center"
+                                android:text="@string/one"
+                                android:textColor="@color/color_66"
+                                android:textSize="@dimen/sp_of_16" />
+
+                            <View
+                                android:layout_width="@dimen/line_width"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_e3" />
+
+                            <TextView
+                                android:id="@+id/tv_plus"
+                                android:layout_width="@dimen/dp_of_30"
+                                android:layout_height="@dimen/dp_of_30"
+                                android:gravity="center"
+                                android:text="+"
+                                android:textColor="@color/color_66" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bonus_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a_time"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_10"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_building_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_of_10">
+
+            <CheckBox
+                android:id="@+id/building_cb"
+                android:layout_width="@dimen/dp_of_30"
+                android:layout_height="match_parent"
+                android:button="@drawable/selector_checkbox_red_gray"
+                android:checked="true"
+                android:gravity="center"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvBundlingFlag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_buildings"
+                android:textColor="@color/selector_grey_c33_enable"
+                android:textSize="@dimen/sp_of_15" />
+
+            <TextView
+                android:id="@+id/tv_building_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:singleLine="true"
+                android:text="@string/nine"
+                android:textColor="@color/selector_enable_red_bb"
+                android:textSize="@dimen/sp_of_15"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_of_5"
+                android:background="@drawable/selector_stroke"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_building_minus"
+                    android:layout_width="@dimen/dp_of_30"
+                    android:layout_height="@dimen/dp_of_30"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="@color/color_66" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_e3" />
+
+                <TextView
+                    android:id="@+id/tv_building_buy_num"
+                    android:layout_width="@dimen/dp_of_50"
+                    android:layout_height="@dimen/dp_of_30"
+                    android:gravity="center"
+                    android:text="@string/one"
+                    android:textColor="@color/color_66"
+                    android:textSize="@dimen/sp_of_16" />
+
+                <View
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_e3" />
+
+                <TextView
+                    android:id="@+id/tv_building_plus"
+                    android:layout_width="@dimen/dp_of_30"
+                    android:layout_height="@dimen/dp_of_30"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/color_66" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/color_e3"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginBottom="@dimen/tv_padding_5"
+        android:layout_marginTop="@dimen/tv_padding_5"
+        android:background="@color/color_e3" />
+
+    <com.fanglin.fhui.flowlayout.TagFlowLayout
+        android:id="@+id/goods_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:max_select="1" />
+</LinearLayout>

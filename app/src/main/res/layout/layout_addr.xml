@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_padding_4"
+            android:background="@drawable/repeate_spliter" />
+
+        <LinearLayout
+            android:id="@+id/LAddr"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_120"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_of_10"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/tv_padding">
+
+                        <TextView
+                            android:id="@+id/tv_certname_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/if_account"
+                            android:textColor="@color/fh_red"
+                            android:textSize="@dimen/sp_of_15" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/tv_padding"
+                            android:singleLine="true"
+                            android:text="@string/app_name"
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/sp_of_15" />
+
+                        <TextView
+                            android:id="@+id/tv_phone_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_of_40"
+                            android:text="@string/if_phone"
+                            android:textColor="@color/fh_red"
+                            android:textSize="@dimen/sp_of_15" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/tv_padding"
+                            android:singleLine="true"
+                            android:text="@string/zero"
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/sp_of_15" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/tv_padding"
+                        android:singleLine="true"
+                        android:text="@string/qingdao"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/sp_of_15" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_addr_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_2right"
+                    android:textSize="@dimen/sp_of_15" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LAdd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_120"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_of_10"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="@dimen/dp_of_120"
+                android:layout_height="@dimen/dp_of_34"
+                android:background="@drawable/shape_redstroke_corner"
+                android:gravity="center"
+                android:text="@string/add_address"
+                android:textColor="@color/fh_red" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_padding_4"
+            android:background="@drawable/repeate_spliter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_8"
+            android:layout_gravity="bottom"
+            android:background="@color/com_bg" />
+    </LinearLayout>
+
+
+</FrameLayout>

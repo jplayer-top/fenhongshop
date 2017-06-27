@@ -1,0 +1,142 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+// 获取当前系统时间
+def releaseTime() {
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss", Locale.CHINA);
+    Date date = new Date();
+    return sdf.format(date);
+}
+
+android {
+
+    signingConfigs {
+        config {
+            keyAlias "microbuyer"
+            keyPassword "fanglin998"
+            storeFile file("../app.keystore")
+            storePassword "fanglin998"
+        }
+        debug {
+            keyAlias "microbuyer"
+            keyPassword "fanglin998"
+            storeFile file("../app.keystore")
+            storePassword "fanglin998"
+        }
+
+        release {
+            keyAlias "microbuyer"
+            keyPassword "fanglin998"
+            storeFile file("../app.keystore")
+            storePassword "fanglin998"
+        }
+
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    defaultConfig {
+        applicationId "com.fanglin.fenhong.microbuyer"
+        minSdkVersion 15
+        targetSdkVersion 22
+        multiDexEnabled true
+        versionCode 387
+        versionName "3.2.7"
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [FH_CHANNEL_NAME: "fenhongshop"]
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            versionNameSuffix ""
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [FH_CHANNEL_NAME: "fenhongshop"]
+        }
+    }
+
+    productFlavors {
+        "fenhongshop" {}
+        "xiaomi" {}
+        "qq" {}
+        "wandoujia" {}
+        "baidu" {}
+        "360" {}
+        "huawei" {}
+        "mumayi" {}
+        "oppo" {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [FH_CHANNEL_NAME: name]
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}-${defaultConfig.versionCode}.apk")
+                //发布版本（正式和提测）才加时间
+                if (variant.buildType.name.equals('release')) {
+                    fileName = releaseTime() + "-" + fileName;
+                }
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    //支持x86下的硬件加速，以能够在模拟器上运行APP
+    splits {
+        abi {
+            enable false
+            reset()
+            include 'x86', 'armeabi-v7a', 'arm', 'intel x86'
+            universalApk true
+        }
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    debugCompile project(path: ':fhlib', configuration: 'debug')
+    releaseCompile project(path: ':fhlib', configuration: 'release')
+    compile project(':alipay')
+    compile project(':fhui')
+    compile project(':ShareSDK')
+    compile project(':XingePush')
+    compile project(':MapAndLocate')
+    compile project(':wxpay')
+    compile project(':ViewPagerIndicator')
+    compile project(':StikkyHeader')
+    compile project(':pulltonextlayout')
+    compile project(':UnionPay')
+    compile project(':Android-PullToRefresh')
+    compile project(':PinnedSectionListview')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+
+    compile 'cn.bingoogolapple:bga-banner:2.0.4@aar'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    compile 'com.umeng.analytics:analytics:5.6.1'
+    compile 'com.truizlop.sectionedrecyclerview:library:1.1.0'
+    compile 'cat.ereza:customactivityoncrash:1.2.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.github.Kennyc1012:MultiStateView:1.2.0'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile project(':QrCodeUtil')
+}
+
+
+

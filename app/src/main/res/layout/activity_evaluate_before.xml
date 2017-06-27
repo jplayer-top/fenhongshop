@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gift_bag"
+        android:layout_marginTop="@dimen/dp_of_60"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_of_30"
+        android:text="@string/publish_comment_0"
+        android:textSize="@dimen/sp_of_18"
+        android:textColor="@color/color_33"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_of_5"
+        android:layout_marginBottom="@dimen/dp_of_20"
+        android:textSize="@dimen/sp_of_20"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:layout_margin="@dimen/dp_of_20"
+        android:background="@drawable/shape_redsolid_corner"
+        android:text="@string/publish_comment"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_of_16"/>
+
+</LinearLayout>

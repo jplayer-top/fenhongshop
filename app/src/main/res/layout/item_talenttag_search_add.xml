@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LTag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_44"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_add_gray"
+            android:drawablePadding="@dimen/dp_of_5"
+            android:text="@string/lbl_addtags"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@color/color_e3" />
+</LinearLayout>

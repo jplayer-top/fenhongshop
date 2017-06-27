@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/dp_of_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selected_addr"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14"/>
+
+        <TextView
+            android:id="@+id/tv_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding_4"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding_4"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14"/>
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding_4"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:background="@color/color_e3"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/color_e3"
+        android:dividerHeight="@dimen/line_width"
+        android:listSelector="@android:color/transparent">
+
+    </ListView>
+
+
+</LinearLayout>

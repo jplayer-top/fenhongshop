@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:gravity="center"
+        android:text="@string/deliver_free"
+        android:textSize="@dimen/sp_of_18"
+        android:textColor="@color/color_33"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3"/>
+
+    <TextView
+        android:id="@+id/tv_explain_baoyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="7"
+        android:padding="@dimen/dp_of_10"
+        android:textSize="@dimen/sp_of_14"
+        android:textColor="@color/color_33"/>
+
+    <TextView
+        android:id="@+id/tv_close_baoyou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/fh_red"
+        android:gravity="center"
+        android:text="@string/close"
+        android:textSize="@dimen/sp_of_16"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

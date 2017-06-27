@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="treerecyclerview_item_margin">8dp</dimen>
+    <dimen name="treerecyclerview_expand_size">10dp</dimen>
+    <dimen name="spot_size">6dp</dimen>
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="progress_margin">24dp</dimen>
+    <dimen name="progress_width">250dp</dimen>
+
+    <!--custom-->
+    <dimen name="custom_dp_of_54">54dp</dimen>
+    <dimen name="custom_dp_of_89">89dp</dimen>
+    <dimen name="custom_dp_of_10">10dp</dimen>
+    <dimen name="custom_dp_of_15">15dp</dimen>
+    <dimen name="custom_dp_of_20">20dp</dimen>
+    <dimen name="custom_dp_of_1">1dp</dimen>
+    <dimen name="custom_dp_of_5">5dp</dimen>
+    <dimen name="custom_dp_of_59">59dp</dimen>
+    <dimen name="custom_dp_of_4">4dp</dimen>
+    <dimen name="custom_dp_of_47">47dp</dimen>
+    <dimen name="custom_dp_of_140">140dp</dimen>
+    <dimen name="custom_dp_of_60">60dp</dimen>
+    <dimen name="custom_dp_of_64">64dp</dimen>
+    <dimen name="custom_dp_of_65">65dp</dimen>
+    <dimen name="custom_dp_of_90">90dp</dimen>
+    <dimen name="custom_dp_of_35">35dp</dimen>
+    <dimen name="custom_dp_of_108">108dp</dimen>
+    <dimen name="custom_line_width">135dp</dimen>
+
+    <dimen name="custom_txt_size">13sp</dimen>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:paddingTop="@dimen/dp_of_15">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/dp_of_100"
+            android:layout_height="@dimen/dp_of_100"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_goods_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:layout_marginRight="@dimen/dp_of_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="嘉娜宝Kanebo Suisai酵母酵素洗颜粉32粒 清透保湿预防粉刺"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_17"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥"
+                            android:textColor="@color/fh_red"
+                            android:textSize="@dimen/sp_of_12" />
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="139.00"
+                            android:textColor="@color/fh_red"
+                            android:textSize="@dimen/sp_of_20" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvCommission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_of_10"
+                        android:text="奖金:¥14"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_13" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAction"
+                    android:text="@string/lbl_cancel_link"
+                    android:textColor="@color/selector_white_red"
+                    android:textSize="@dimen/sp_of_13"
+                    android:background="@drawable/selector_linkgoods"
+                    android:layout_width="@dimen/dp_of_80"
+                    android:layout_height="@dimen/dp_of_30" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_marginLeft="@dimen/dp_of_15"
+        android:layout_marginRight="@dimen/dp_of_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_60"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@drawable/shape_lightblue_solid_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/vLeft"
+            android:layout_width="@dimen/dp_of_2"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_left_corner" />
+
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/dp_of_35"
+            android:layout_height="@dimen/dp_of_35"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_dutyfree_cart" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:text="2016-12-06 22:20:21"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:text="-¥500.00"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+</LinearLayout>

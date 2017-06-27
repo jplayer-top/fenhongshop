@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_B2">
+
+    <AbsoluteLayout
+        android:id="@+id/vDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/custom_line_width">
+
+        <ImageView
+            android:id="@+id/ivDotBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_x="0dp"
+            android:layout_y="@dimen/custom_dp_of_54"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/shape_circle_bg" />
+
+        <View
+            android:layout_width="@dimen/custom_dp_of_1"
+            android:layout_height="@dimen/custom_dp_of_89"
+            android:layout_x="@dimen/custom_dp_of_10"
+            android:layout_y="@dimen/custom_dp_of_20"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivDot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_x="@dimen/custom_dp_of_5"
+            android:layout_y="@dimen/custom_dp_of_59"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/shape_circle_white" />
+    </AbsoluteLayout>
+
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="@dimen/custom_line_width"
+        android:layout_height="wrap_content"
+        android:layout_x="@dimen/custom_dp_of_10"
+        android:layout_y="@dimen/custom_dp_of_4"
+        android:gravity="right"
+        android:paddingLeft="@dimen/custom_dp_of_15"
+        android:paddingRight="@dimen/custom_dp_of_20"
+        android:singleLine="true"
+        android:text="A"
+        android:textSize="@dimen/custom_txt_size"
+        android:textColor="@color/white" />
+
+
+    <View
+        android:id="@+id/lineTop"
+        android:layout_width="@dimen/custom_line_width"
+        android:layout_height="@dimen/custom_dp_of_1"
+        android:layout_x="@dimen/custom_dp_of_10"
+        android:layout_y="@dimen/custom_dp_of_20"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tvMiddle"
+        android:layout_width="@dimen/custom_line_width"
+        android:layout_height="wrap_content"
+        android:layout_x="@dimen/custom_dp_of_10"
+        android:layout_y="@dimen/custom_dp_of_47"
+        android:gravity="right"
+        android:maxWidth="@dimen/custom_dp_of_140"
+        android:paddingLeft="@dimen/custom_dp_of_15"
+        android:paddingRight="@dimen/custom_dp_of_20"
+        android:singleLine="true"
+        android:text="B"
+        android:textSize="@dimen/custom_txt_size"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="@dimen/custom_dp_of_10"
+        android:layout_y="@dimen/custom_dp_of_64"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/lineLeft"
+            android:layout_width="@dimen/custom_dp_of_35"
+            android:layout_height="@dimen/custom_dp_of_1"
+            android:background="@color/white"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/lineMiddle"
+            android:layout_width="@dimen/custom_dp_of_65"
+            android:layout_height="@dimen/custom_dp_of_1"
+            android:background="@color/white" />
+
+        <View
+            android:id="@+id/lineRight"
+            android:layout_width="@dimen/custom_dp_of_35"
+            android:layout_height="@dimen/custom_dp_of_1"
+            android:background="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvBottom"
+        android:layout_width="@dimen/custom_line_width"
+        android:layout_height="wrap_content"
+        android:layout_x="@dimen/custom_dp_of_10"
+        android:layout_y="@dimen/custom_dp_of_90"
+        android:gravity="right"
+        android:maxWidth="@dimen/custom_line_width"
+        android:paddingLeft="@dimen/custom_dp_of_15"
+        android:paddingRight="@dimen/custom_dp_of_20"
+        android:singleLine="true"
+        android:text="C"
+        android:textSize="@dimen/custom_txt_size"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/lineBottom"
+        android:layout_width="@dimen/custom_line_width"
+        android:layout_height="@dimen/custom_dp_of_1"
+        android:layout_x="@dimen/custom_dp_of_10"
+        android:layout_y="@dimen/custom_dp_of_108"
+        android:background="@color/white" />
+
+</AbsoluteLayout>

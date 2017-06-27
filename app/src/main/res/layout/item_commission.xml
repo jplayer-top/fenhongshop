@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="西班牙原装进口气泡红葡萄酒好喝好喝唯美厉害啊喝唯美厉害啊喝唯美厉害啊喝唯美厉害啊喝唯美厉害啊"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_5"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="¥156.900"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="@dimen/tv_padding"
+                android:text="@string/goods_commission"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="@dimen/tv_padding"
+                android:text="¥300.00"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/dp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_goods_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="x1"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:background="@drawable/shape_commission_gray_corner"
+                android:padding="@dimen/dp_of_2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_15"
+            android:layout_marginTop="@dimen/dp_of_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_order_create_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="m169***68953"
+                android:textColor="@color/color_e3"
+                android:textSize="@dimen/dp_of_12" />
+
+            <TextView
+                android:id="@+id/tv_order_settle_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/a_time"
+                android:textColor="@color/color_e3"
+                android:textSize="@dimen/dp_of_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_1"
+        android:background="@color/com_bg" />
+</LinearLayout>

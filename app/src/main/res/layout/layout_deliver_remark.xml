@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_of_10"
+        android:text="@string/title_of_deliver_remark"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:background="@color/color_e3" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_80"
+        android:layout_margin="@dimen/dp_of_12"
+        android:gravity="top"
+        android:text="不配送地区台湾，香港，澳门，海外"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_13" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_26"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:background="@drawable/shape_redsolid_corner"
+        android:padding="@dimen/dp_of_14"
+        android:text="@string/close"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_of_17" />
+</LinearLayout>

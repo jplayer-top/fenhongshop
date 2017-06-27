@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--退款类型-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_32"
+                android:background="@color/com_bg"
+                android:paddingLeft="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tv_return_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/return_goods_type"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_return_type"
+                    android:layout_toRightOf="@id/tv_return_type"
+                    android:text="@string/star"
+                    android:textColor="@color/fh_red"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_type_refund"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_46"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tv_type_refund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/return_goods_type_refund"
+                    android:textColor="@color/selector_red_black"
+                    android:textSize="@dimen/sp_of_14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/return_goods_type_refund_add"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14"/>
+
+                <TextView
+                    android:id="@+id/tv_icon_refund"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/if_check"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_12"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_1"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginRight="@dimen/dp_of_10"
+                android:background="@color/com_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/ll_type_return_goods"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_46"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tv_type_return_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/return_goods_type_return_goods"
+                    android:textColor="@color/selector_red_black"
+                    android:textSize="@dimen/sp_of_14"/>
+
+                <TextView
+                    android:id="@+id/tv_icon_return_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/if_check"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_12"/>
+            </RelativeLayout>
+
+            <!--退款原因-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_32"
+                android:background="@color/com_bg"
+                android:paddingLeft="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tv_return_goods_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/return_goods_reason"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_return_goods_reason"
+                    android:layout_toRightOf="@id/tv_return_goods_reason"
+                    android:text="@string/star"
+                    android:textColor="@color/fh_red"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_return_reason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_46"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tv_return_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/return_goods_reason"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/sp_of_14"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_arrow_right"/>
+            </RelativeLayout>
+
+            <!--退款金额-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_32"
+                android:background="@color/com_bg"
+                android:paddingLeft="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tv_return_goods_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/return_goods_money"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_12"/>
+
+                <TextView
+                    android:id="@+id/tv_star_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_return_goods_money"
+                    android:layout_toRightOf="@id/tv_return_goods_money"
+                    android:text="@string/star"
+                    android:textColor="@color/fh_red"/>
+
+                <TextView
+                    android:id="@+id/tv_return_goods_money_most"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:layout_toRightOf="@id/tv_star_money"
+                    android:text="@string/return_goods_money_most"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_return_money"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_46"
+                android:background="@null"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:ellipsize="end"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:hint="@string/return_goods_money_hint"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/dp_of_14"/>
+
+            <!--退货数量-->
+            <LinearLayout
+                android:id="@+id/ll_return_goods_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_of_32"
+                    android:background="@color/com_bg"
+                    android:paddingLeft="@dimen/dp_of_10">
+
+                    <TextView
+                        android:id="@+id/tv_return_goods_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/return_goods_num"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_12"/>
+
+                    <TextView
+                        android:id="@+id/tv_star_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_return_goods_num"
+                        android:layout_toRightOf="@id/tv_return_goods_num"
+                        android:text="@string/star"
+                        android:textColor="@color/fh_red"/>
+
+                    <TextView
+                        android:id="@+id/tv_return_goods_num_most"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_of_10"
+                        android:layout_toRightOf="@id/tv_star_num"
+                        android:text="@string/return_goods_num_most"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/sp_of_12"/>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_return_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_of_46"
+                    android:paddingLeft="@dimen/dp_of_10"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:hint="@string/return_goods_num_hint"
+                    android:textColor="@color/color_33"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/sp_of_14"/>
+            </LinearLayout>
+
+            <!--退款说明-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_32"
+                android:background="@color/com_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_of_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/return_goods_desc"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/return_goods_desc_add"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_return_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_46"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:background="@null"
+                android:ellipsize="end"
+                android:imeOptions="actionDone"
+                android:maxLength="200"
+                android:hint="@string/return_goods_desc_hint"
+                android:singleLine="true"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/sp_of_14"/>
+
+            <!--上传图片-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_32"
+                android:background="@color/com_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:text="@string/upload_picture"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_12"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_pic_return_goods"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_112"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:text="@string/upload_picture_hint"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_11"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:paddingBottom="@dimen/dp_of_50"
+                android:paddingTop="@dimen/dp_of_10"
+                android:background="@color/com_bg"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_subimt"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_redsolid_corner"
+                    android:text="@string/merchantin_submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_of_18"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

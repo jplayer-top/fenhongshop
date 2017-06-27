@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.alipay"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--behind-->
+
+    <application android:allowBackup="true">
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+    </application>
+
+</manifest>

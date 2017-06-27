@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="@dimen/tv_padding_3"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="@dimen/tv_padding_3" />
+    <solid android:color="#FD7070" />
+    <padding
+        android:bottom="@dimen/dp_of_13"
+        android:left="@dimen/dp_of_9"
+        android:right="@dimen/dp_of_14"
+        android:top="@dimen/dp_of_13" />
+</shape>

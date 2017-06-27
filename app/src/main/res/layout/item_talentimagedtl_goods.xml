@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:paddingTop="@dimen/dp_of_15">
+
+        <ImageView
+            android:id="@+id/ivGoodsImage"
+            android:layout_width="@dimen/dp_of_76"
+            android:layout_height="@dimen/dp_of_76"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_goods_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新西兰 Royal Nectar 皇家花蜜蜂毒去黄保 湿紧致肌肤面膜 50ml" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_20"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥220.00"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:background="@color/color_e3" />
+</LinearLayout>

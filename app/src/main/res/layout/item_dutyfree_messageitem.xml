@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llLookMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_of_14"
+        android:paddingRight="@dimen/dp_of_14"
+        android:paddingTop="@dimen/dp_of_14">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_6"
+            android:background="@drawable/shape_item_message" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_background"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_of_15"
+            android:paddingTop="@dimen/dp_of_15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="分红全球购"
+                    android:textColor="@color/text666"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_of_30"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_of_2"
+                    android:paddingRight="@dimen/dp_of_15">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_of_14"
+                        android:layout_height="@dimen/dp_of_15"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/readmessage" />
+
+                    <ImageView
+                        android:id="@+id/ivRead"
+                        android:layout_width="@dimen/dp_of_4"
+                        android:layout_height="@dimen/dp_of_4"
+                        android:layout_alignParentRight="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/shapemessage" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_15"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingRight="@dimen/dp_of_15"
+                android:text="唐朝张怀作有《文字论》“论曰：文字者，总而为言。若分而为义，则文者祖父，字者子孙。察其物形，得其文理，故谓之曰文；母子相生..."
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_11" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_tccc" />
+
+            <RelativeLayout
+                android:id="@+id/rlLookMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_of_10"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看详情"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_10" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_of_5"
+                    android:layout_height="@dimen/dp_of_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rightarrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

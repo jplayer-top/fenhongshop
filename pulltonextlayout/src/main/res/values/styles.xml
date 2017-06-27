@@ -1,0 +1,15 @@
+<resources>
+
+
+
+    <item type="id" name="contentFL1"/>
+    <item type="id" name="contentFL2"/>
+    <item type="id" name="contentFL3"/>
+    <color name="gray">#606060</color>
+    <color name="bg">#dddddd</color>
+    <style name="CommonTextAppearance_Small_Gray" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+</resources>

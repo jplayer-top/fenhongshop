@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivPay"
+        android:layout_width="@dimen/dp_of_100"
+        android:layout_height="@dimen/dp_of_50"
+        android:layout_margin="@dimen/tv_padding"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_dutyfree_wxpay" />
+</LinearLayout>

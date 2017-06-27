@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16"
+        android:paddingTop="@dimen/dp_of_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品总价"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="¥11730.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_10"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关税"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="¥0.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LFreight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvFreight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="¥0.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LPromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_10"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_dutyfree_promotion"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvDiscountDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:background="@drawable/shape_promotion"
+            android:paddingBottom="@dimen/tv_padding_3"
+            android:paddingLeft="@dimen/tv_padding_5"
+            android:paddingRight="@dimen/tv_padding_5"
+            android:paddingTop="@dimen/tv_padding_3"
+            android:text="1~2万（9折）"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_10" />
+
+        <TextView
+            android:id="@+id/tvDiscountMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="-¥1173.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LImport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_10"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16">
+
+        <TextView
+            android:id="@+id/tvImportLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进口商品"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvImportDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:background="@drawable/shape_promotion"
+            android:paddingBottom="@dimen/tv_padding_3"
+            android:paddingLeft="@dimen/tv_padding_5"
+            android:paddingRight="@dimen/tv_padding_5"
+            android:paddingTop="@dimen/tv_padding_3"
+            android:text="9折优惠"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_10" />
+
+        <TextView
+            android:id="@+id/tvImportMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="-¥521.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_10"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16">
+
+        <TextView
+            android:id="@+id/tvItemLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠方式"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvItemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:background="@drawable/shape_promotion"
+            android:paddingBottom="@dimen/tv_padding_3"
+            android:paddingLeft="@dimen/tv_padding_5"
+            android:paddingRight="@dimen/tv_padding_5"
+            android:paddingTop="@dimen/tv_padding_3"
+            android:text="限时优惠"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_10" />
+
+        <TextView
+            android:id="@+id/tvItemMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="-¥521.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_10"
+        android:paddingLeft="@dimen/dp_of_16"
+        android:paddingRight="@dimen/dp_of_16">
+
+        <TextView
+            android:id="@+id/tvBalanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额抵扣"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvBalanceDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:text="(可用余额¥5000.00)"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_10" />
+
+        <TextView
+            android:id="@+id/tvBalanceMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:text="-¥5000.00"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:background="@color/com_bg" />
+
+</LinearLayout>

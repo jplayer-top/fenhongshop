@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_p50">#7f000000</color>
+    <color name="default_ascv_selected_color">#0099CC</color>
+    <color name="default_ascv_unselected_color">#FFFFFF</color>
+
+    <declare-styleable name="MultipleSelectionButton">
+        <attr name="ascv_unselectedTextColor" format="reference"/>
+        <attr name="ascv_unselectedColor" format="reference"/>
+        <attr name="ascv_selectedColor" format="reference"/>
+        <attr name="ascv_selectedTextColor" format="reference"/>
+        <attr name="ascv_items" format="reference"/>
+        <attr name="ascv_values" format="reference"/>
+        <attr name="ascv_equalWidth" format="boolean"/>
+        <attr name="ascv_stretch" format="boolean"/>
+        <attr name="ascv_defaultSelection" format="integer"/>
+        <attr name="ascv_identifier" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float"/>
+        <attr name="inner_parallax_factor" format="float"/>
+        <attr name="parallax_views_num" format="integer"/>
+        <attr name="circular_parallax" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="GooleIOView">
+        <attr name="parallax_color" format="color"/>
+    </declare-styleable>
+
+    /*定义圆角图片 Plucky*/
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+
+    /*定义SegmentControl caifangmao*/
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference"/>
+        <attr name="colors" format="color|reference"/>
+        <attr name="texts" format="string|reference"/>
+        <attr name="android:textSize"/>
+        <attr name="direction" format="enum">
+            <enum name="horizon" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="gaps" format="dimension|reference"/>
+        <attr name="horizonGap" format="dimension|reference"/>
+        <attr name="verticalGap" format="dimension|reference"/>
+    </declare-styleable>
+
+    <!--ActionSheet 控件,只能在FragmentActivity 中使用-->
+    <declare-styleable name="ActionSheets">
+        <attr name="actionSheetStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="ActionSheet">
+        <attr name="actionSheetBackground" format="color|reference"/>
+        <attr name="cancelButtonBackground" format="color|reference"/>
+        <attr name="otherButtonTopBackground" format="color|reference"/>
+        <attr name="otherButtonMiddleBackground" format="color|reference"/>
+        <attr name="otherButtonBottomBackground" format="color|reference"/>
+        <attr name="otherButtonSingleBackground" format="color|reference"/>
+        <attr name="cancelButtonTextColor" format="color|reference"/>
+        <attr name="otherButtonTextColor" format="color|reference"/>
+        <attr name="actionSheetPadding" format="dimension|reference"/>
+        <attr name="otherButtonSpacing" format="dimension|reference"/>
+        <attr name="cancelButtonMarginTop" format="dimension|reference"/>
+        <attr name="actionSheetTextSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <style name="ActionSheetStyleIOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+        <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+        <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+        <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+        <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+        <item name="cancelButtonTextColor">#1E82FF</item>
+        <item name="otherButtonTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">16sp</item>
+    </style>
+
+    <style name="Theme.Swipe.Back" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="InnerDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color"/>
+        <attr name="DialogSpotCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference"/>
+        <attr name="contentView" format="reference"/>
+        <attr name="zoomView" format="reference"/>
+        <attr name="isHeaderParallax" format="boolean"/>
+    </declare-styleable>
+
+    <style name="FHDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#7F000000</item> <!--50%透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <declare-styleable name="custom3LinesStyle">
+        <attr name="textTop" format="string" />
+        <attr name="textMiddle" format="string" />
+        <attr name="textBottom" format="string" />
+        <attr name="textColorAll" format="color"/>
+        <attr name="bgRes" format="reference"/>
+        <attr name="allowSpringback" format="boolean"/>
+        <attr name="allowSlide" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FHEditText">
+        <attr name="limitInputReg" format="string"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/tv_padding">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_of_2"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_block" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_of_4"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="假一赔三"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:text="分红全球购每一件商品都通过严苛的品质把关，保障正品，保障品质。特推 出“假一赔三”的正品保障政策，杜绝一切假货，让您无忧购物。消费者提 报产品有问题时，需在有效期限内提供相关证据材料，以证明与卖家交易的 商品存在提出的问题或不符合双方的约定，并保证所提交的证据材料真实、 合法及有效。"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+
+</LinearLayout>

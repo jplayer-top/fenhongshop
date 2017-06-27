@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_50"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/LCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_10">
+
+                <ImageView
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imgCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selector_checkbox_red_gray"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_15"
+                    android:text="@string/select_all"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_of_13"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/count_money"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_15" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/nofreight_tips"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_of_50"
+            android:background="@drawable/selector_color_calculate"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_of_20"
+            android:paddingRight="@dimen/dp_of_20"
+            android:text="@string/fmt_pay_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_16" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <View
+        android:id="@+id/vTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10"
+        android:background="@color/com_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LManjianAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LBaoyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/deliver_free"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvBaoyou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="满100包邮"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvInStoreIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/lbl_store_right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vBaoyou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LBonus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/pay_by_bonus"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvBonus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="优惠券"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvIconBonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vBonus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LTaozhuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/lable_buildings"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvTaozhuang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="A+B   B+C  D+E+F+G"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvIconTaozhuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vTaozhuang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LHuangou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/lable_huangou"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvHuangou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="满100可换购AAA"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvIconHuangou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vHuangou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LXianshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/lable_xianshi"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvXianshi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="限购3件"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vXianshi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LMiaoshaTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/miaosha"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvMiaoshaTag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="购买一件享受秒杀优惠"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vMiaoshaTag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LRenxuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/lbl_renxuan"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvRenxuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="99元任选5件，179元选10件"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvRenxuanIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vRenxuan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="gone" />
+</LinearLayout>

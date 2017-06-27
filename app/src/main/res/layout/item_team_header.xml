@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--  队员菜单选项 开始   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/group_title_all"
+                android:textColor="@color/selector_enable_red_gray33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:id="@+id/slider_all"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_2"
+                android:layout_marginLeft="@dimen/dp_of_15"
+                android:layout_marginRight="@dimen/dp_of_15"
+                android:background="@color/fh_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_B"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_B"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/group_title_B"
+                android:textColor="@color/selector_enable_red_gray33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:id="@+id/slider_B"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_2"
+                android:layout_marginLeft="@dimen/dp_of_15"
+                android:layout_marginRight="@dimen/dp_of_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_C"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_C"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/group_title_C"
+                android:textColor="@color/selector_enable_red_gray33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:id="@+id/slider_C"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_2"
+                android:layout_marginLeft="@dimen/dp_of_15"
+                android:layout_marginRight="@dimen/dp_of_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_D"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_D"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/group_title_D"
+                android:textColor="@color/selector_enable_red_gray33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:id="@+id/slider_D"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_2"
+                android:layout_marginLeft="@dimen/dp_of_15"
+                android:layout_marginRight="@dimen/dp_of_15" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--  队员菜单选项 结束   -->
+
+    <!--  团队成员人数 奖金收入 开始   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_75"
+        android:background="@color/color_lan"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:layout_marginRight="@dimen/dp_of_15"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTeamLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_people_count"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_people_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_15"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_of_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/group_commission_income"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tv_commission_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/dp_of_10"
+                    android:text="99.99"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="@string/yuan_cn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_of_14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvVerifyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/dp_of_10"
+                android:background="@drawable/shape_greensolid_corner"
+                android:paddingBottom="@dimen/dp_of_4"
+                android:paddingLeft="@dimen/dp_of_8"
+                android:paddingRight="@dimen/dp_of_8"
+                android:paddingTop="@dimen/dp_of_4"
+                android:text="已认证：8人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_13" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <!--  团队成员人数 奖金收入 结束   -->
+
+    <LinearLayout
+        android:id="@+id/LNums"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_title_B_colon" />
+
+            <TextView
+                android:id="@+id/tvLevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7人"
+                android:textColor="@color/onelevel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_title_C_colon"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvLevel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9人"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_title_D_colon"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvLevel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9人"
+                android:textColor="@color/threelevel"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_of_15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lbl_name"
+            android:textColor="@color/color_33"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lbl_level"
+            android:textColor="@color/color_33"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lbl_status"
+            android:textColor="@color/color_33"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lbl_bonus"
+            android:textColor="@color/color_33"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+</LinearLayout>

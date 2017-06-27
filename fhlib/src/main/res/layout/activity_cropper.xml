@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#77000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/VOutSide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/LBOT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/cropper_other_bt_top"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="从相册选取"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/cropper_other_bt_bottom"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="拍照"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/cropper_other_bt_single"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

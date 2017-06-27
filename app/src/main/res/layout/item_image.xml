@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/sdv"
+        android:layout_width="@dimen/dp_of_60"
+        android:layout_height="@dimen/dp_of_60"
+        android:contentDescription="@string/qrcode_cancel"
+        android:layout_marginRight="@dimen/tv_padding_5"
+        android:src="@drawable/default_goods_img"
+        android:scaleType="fitXY"/>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    /*iconfont 图标代码*/
+    <string name="if_icon_more">&#xe60c;</string>
+    <string name="if_icon_buy">&#xe642;</string>
+    <string name="if_icon_collect">&#xe649;</string>
+
+    <string name="if_icon_list">&#xe618;</string>
+    <string name="if_icon_search">&#xe61d;</string>
+    <string name="if_icon_msg">&#xe656;</string>
+    <string name="if_search_btn">&#xe646;</string>
+    <string name="if_notice">&#xe625;</string>
+    <string name="if_brands">&#xe619;</string>
+
+    <string name="if_2right">&#xe612;</string>
+    <string name="if_2down">&#xe604;</string>
+    <string name="if_trigup">&#xe626;</string>
+    <string name="if_trigdown">&#xe627;</string>
+
+    <string name="if_history">&#xe616;</string>
+    <string name="if_orders">&#xe610;</string>
+    <string name="if_income">&#xe611;</string>
+    <string name="if_address">&#xe60d;</string>
+    <string name="if_settings">&#xe60c;</string>
+    <string name="if_delete">&#xe628;</string>
+
+    <string name="if_balance">&#xe615;</string>
+    <string name="if_money_from_microshop">&#xe60f;</string>
+    <string name="if_deposit">&#xe624;</string>
+    <string name="if_points">&#xe609;</string>
+    <string name="if_microshop">&#xe60a;</string>
+    <string name="if_fancy_microshop">&#xe64b;</string>
+    <string name="if_coupon">&#xe614;</string>
+    <string name="if_vip">&#xe64a;</string>
+
+    <string name="if_team">&#xe622;</string>
+    <string name="if_shareapp">&#xe620;</string>
+
+    <string name="if_pay">&#xe606;</string>
+    <string name="if_release">&#xe605;</string>
+    <string name="if_delivery">&#xe607;</string>
+    <string name="if_evaluate">&#xe60b;</string>
+    <string name="if_services">&#xe60e;</string>
+
+    <string name="if_qq">&#xe600;</string>
+    <string name="if_wechat">&#xe602;</string>
+    <string name="if_weibo">&#xe601;</string>
+    <string name="if_wechat_moments">&#xe666;</string>
+    <string name="if_qzone">&#xe665;</string>
+    <string name="if_not_login">&#xe621;</string>
+
+    <string name="if_cart">&#xe630;</string>
+    <string name="if_store">&#xe62c;</string>
+    <string name="if_love_empty">&#xe62a;</string>
+    <string name="if_love_full">&#xe62f;</string>
+    <string name="if_love_contact">&#xe676;</string>
+
+    <string name="if_goods_quality">&#xe62e;</string>
+    <string name="if_sea_2_china">&#xe629;</string>
+    <string name="if_brand_quality">&#xe62b;</string>
+    <string name="if_refund_quality">&#xe62d;</string>
+
+    <string name="if_pullup">&#xe631;</string>
+    <string name="if_goods_recommend">&#xe617;</string>
+    <string name="if_close">&#xe632;</string>
+    <string name="if_plus">&#xe634;</string>
+    <string name="if_minus">&#xe633;</string>
+    <string name="if_locate">&#xe635;</string>
+    <string name="if_edit">&#xe637;</string>
+    <string name="if_check">&#xe639;</string>
+    <string name="if_account">&#xe63a;</string>
+    <string name="if_phone">&#xe63b;</string>
+    <string name="if_title">&#xe648;</string>
+    <string name="if_add_cart">&#xe647;</string>
+    <string name="if_store_home">&#xe64d;</string>
+    <string name="if_more">&#xe64c;</string>
+    <string name="if_bulb">&#xe636;</string>
+    <string name="if_why">&#xe64e;</string>
+    <string name="if_fav_edit">&#xe638;</string>
+    <string name="if_up">&#xe64f;</string>
+    <string name="if_quto">&#xe650;</string>
+
+    <string name="if_goods_activity">&#xe657;</string>
+    <string name="if_goods_notice">&#xe651;</string>
+    <string name="if_delivery_notice">&#xe654;</string>
+    <string name="if_income_notice">&#xe652;</string>
+    <string name="if_sys_notice">&#xe655;</string>
+    <string name="if_team_notice">&#xe653;</string>
+    <string name="if_msg17">&#xe679;</string>
+    <string name="if_msg18">&#xe600;</string>
+    <string name="if_msg19">&#xe601;</string>
+
+    <!--银行卡图标-->
+    <string name="if_zfb">&#xe662;</string>
+    <string name="if_yzyh">&#xe65f;</string>
+    <string name="if_jtyh">&#xe65b;</string>
+    <string name="if_nyyh">&#xe65c;</string>
+    <string name="if_rmyh">&#xe65d;</string>
+    <string name="if_xyyh">&#xe65e;</string>
+    <string name="if_jsyh">&#xe65a;</string>
+    <string name="if_zsyh">&#xe660;</string>
+    <string name="if_zgyh">&#xe661;</string>
+    <string name="if_hxyh">&#xe659;</string>
+    <string name="if_gfyh">&#xe664;</string>
+    <string name="if_msyh">&#xe663;</string>
+    <string name="if_gsyh">&#xe658;</string>
+    <string name="if_picc">&#xe66d;</string>
+
+    <string name="if_add">&#xe668;</string>
+    <string name="if_success">&#xe66a;</string>
+    <string name="if_error">&#xe669;</string>
+    <string name="if_sorry">&#xe66b;</string>
+    <string name="if_picc_txt">&#xe66e;</string>
+    <string name="if_refund_process_01">&#xe672;</string>
+    <string name="if_refund_process_03">&#xe66f;</string>
+    <string name="if_refund_process_04">&#xe670;</string>
+    <string name="if_refund_process_05">&#xe671;</string>
+    <string name="if_refund_process_06">&#xe673;</string>
+    <string name="if_bao">&#xe674;</string>
+    <string name="if_bank_card">&#xe675;</string>
+
+    <string name="if_zhiyou">&#xe678;</string>
+    <string name="if_ziying">&#xe677;</string>
+    <string name="if_share">&#xe684;</string>
+    <string name="if_contact">&#xe688;</string>
+    <string name="if_service">&#xe685;</string>
+    <string name="if_msg">&#xe68a;</string>
+    <string name="if_dutyfree_msg">&#xe68c;</string>
+
+    <string name="if_home">&#xe689;</string>
+    <string name="if_hot">&#xe68b;</string>
+    <string name="if_time">&#xe667;</string>
+    <string name="if_kefu">&#xe685;</string>
+    <string name="if_lock">&#xe68e;</string>
+
+    <string name="if_clock">&#xe687;</string>
+    <string name="if_miaosha_limit">&#xe68f;</string>
+    <string name="if_invalid">&#xe694;</string>
+    <string name="if_wait_pay">&#xe690;</string>
+    <string name="if_wait_receive">&#xe691;</string>
+    <string name="if_settle_accounts">&#xe692;</string>
+    <string name="if_commision_settle">&#xe602;</string>
+    <string name="if_alert">&#xe695;</string>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+
+    <integer name="np_config_longAnimTime">500</integer>
+    <color name="np_light_grey">#F4F4F4</color>
+</resources>

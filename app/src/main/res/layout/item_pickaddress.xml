@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_35"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_pick_address" />
+
+        <TextView
+            android:id="@+id/tvAddr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="【默认】山东省 青岛市 市南区 软件园7号楼7层b区"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_marginLeft="@dimen/tv_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_pickaddress_check" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+</LinearLayout>

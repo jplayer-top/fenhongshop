@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/vSpecLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10"
+        android:background="@color/com_bg" />
+
+    <LinearLayout
+        android:id="@+id/LSpec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择" />
+
+        <TextView
+            android:id="@+id/tvSpec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:layout_weight="1"
+            android:text="2.5g雏菊粉色" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10"
+        android:background="@color/com_bg" />
+
+    <LinearLayout
+        android:id="@+id/LDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_16"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_1"
+            android:text="折扣"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvDiscountDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_18"
+            android:text="40000元以下，打9.0折\n40000元以上，打8.5折"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10"
+        android:background="@color/com_bg" />
+
+    <LinearLayout
+        android:id="@+id/LFreight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_43"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvFreight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:text="包邮"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+
+        <ImageView
+            android:id="@+id/ivFreight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vReadMe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:id="@+id/LReadMe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_43"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说明:"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvReadMe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:layout_weight="1"
+            android:text="假一赔十  无忧退货  不提供发票"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comtop_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/comtop_height"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_of_15"
+            android:background="@drawable/shape_talenttag_editbox"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_of_32"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_search_gray"
+                android:drawablePadding="@dimen/dp_of_10"
+                android:hint="@string/hint_search_tags"
+                android:maxLength="16"
+                android:maxEms="8"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_of_11" />
+
+            <ImageView
+                android:id="@+id/ivClear"
+                android:layout_width="@dimen/dp_of_30"
+                android:layout_height="@dimen/dp_of_30"
+                android:layout_marginRight="@dimen/dp_of_2"
+                android:background="@color/com_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:visibility="gone"
+                android:src="@drawable/login_clear" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_noresult"
+        app:msv_errorView="@layout/layout_error"
+        app:msv_loadingView="@layout/layout_loading"
+        app:msv_viewState="content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_tag_red"
+                        android:drawablePadding="@dimen/dp_of_5"
+                        android:paddingBottom="@dimen/dp_of_11"
+                        android:paddingLeft="@dimen/dp_of_8"
+                        android:paddingTop="@dimen/dp_of_11"
+                        android:text="热门标签"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_14" />
+
+                    <com.fanglin.fhui.flowlayout.TagFlowLayout
+                        android:id="@+id/tflHotSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/dp_of_5"
+                        android:paddingLeft="@dimen/dp_of_10"
+                        android:paddingTop="@dimen/dp_of_10" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_of_10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_tag_gray"
+                        android:drawablePadding="@dimen/dp_of_5"
+                        android:paddingBottom="@dimen/dp_of_11"
+                        android:paddingLeft="@dimen/dp_of_8"
+                        android:paddingTop="@dimen/dp_of_11"
+                        android:text="最近选择"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_14" />
+
+                    <com.fanglin.fhui.flowlayout.TagFlowLayout
+                        android:id="@+id/tflRecentSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/dp_of_5"
+                        android:paddingLeft="@dimen/dp_of_10"
+                        android:paddingTop="@dimen/dp_of_10" />
+
+                    <TextView
+                        android:id="@+id/tvClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp_of_30"
+                        android:text="@string/lbl_clear_recent"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/sp_of_14" />
+                </LinearLayout>
+            </ScrollView>
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </FrameLayout>
+
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--四个标题-->
+    <LinearLayout
+        android:id="@+id/llTitles"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:baselineAligned="false"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llTradeAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTradeAll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_44"
+                android:gravity="center"
+                android:text="@string/all"
+                android:textColor="@color/selector_enable_red_gray33" />
+
+            <TextView
+                android:id="@+id/sliderTradeAll"
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@drawable/selector_enabled_red_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTradeProcessing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTradeProcessing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_44"
+                android:gravity="center"
+                android:text="@string/comm_trade_processing"
+                android:textColor="@color/selector_enable_red_gray33" />
+
+            <TextView
+                android:id="@+id/sliderTradeProcessing"
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@drawable/selector_enabled_red_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTradeFinished"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTradeFinished"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_44"
+                android:gravity="center"
+                android:text="@string/comm_trade_finished"
+                android:textColor="@color/selector_enable_red_gray33" />
+
+            <TextView
+                android:id="@+id/sliderTradeFinished"
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@drawable/selector_enabled_red_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTradeInvalid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTradeInvalid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_44"
+                android:gravity="center"
+                android:text="@string/expired"
+                android:textColor="@color/selector_enable_red_gray33" />
+
+            <TextView
+                android:id="@+id/sliderTradeInvalid"
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@drawable/selector_enabled_red_white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_1"
+        android:background="@color/com_bg" />
+
+</LinearLayout>

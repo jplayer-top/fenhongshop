@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_24"
+        android:gravity="center|bottom"
+        android:text="2017.12.28 下午4:20"
+        android:textColor="@color/color_ccc"
+        android:textSize="@dimen/sp_of_9" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width" />
+</LinearLayout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="adata">
+        <Data><![CDATA[
+
+        <b>带格式的string</b>
+
+        ]]> </Data>
+    </string>
+
+    <string name="deposit_tips_iconfont">
+        <Data><![CDATA[
+        <font color="#999999">
+&#xe64e;&nbsp;&nbsp;&nbsp;提现金额说明：<br>1、申请人必须与持卡人姓名一致，开户行/支付宝、银行卡号/支付账号必须正确，否则无法提现;<br>2、提现金额需满10元才能申请。<br>3、申请成功后，金额会在2个工作日（节假日顺延）内到账。<br>
+4、温馨小提示：未提现金额可以直接进行购物抵扣哦~<br/>5、根据《中华人民共和国个人所得税法》规定，分红全球购用户分享所得奖金将按法规缴纳相应费用，交易过程中产生的退款无需缴纳。
+</font>
+        ]]> </Data>
+    </string>
+
+    <string name="fmt_pay_amount">
+        <Data><![CDATA[
+        <font color="#333333">实付金额</font>
+<font color="#fa2855">%1$s</font>
+<font color="#333333">元</font>
+        ]]> </Data>
+    </string>
+
+    <string name="fmt_default_bankcard">
+        <Data><![CDATA[
+<font color="#fa2855">%1$s</font>
+<font color="#333333">%2$s</font>
+        ]]> </Data>
+    </string>
+
+    <string name="fmt_pay_amountby_deposit">
+        <Data><![CDATA[
+        <font color="#333333">实付金额</font>
+<font color="#fa2855">%1$s</font>
+<font color="#333333">元</font><br>
+<font color="#333333">其中使用优惠券、站内余额抵扣:</font><br>
+<font color="#fa2855">%2$s</font>
+<font color="#333333">元</font><br>
+        ]]> </Data>
+    </string>
+
+    <string name="tips_order">
+        <Data><![CDATA[
+<font color="#777777">你的订单已提交,请在</font>
+<font color="#fa2855">%1$s</font>
+<font color="#777777">内完成支付,超时订单自动取消</font>
+        ]]> </Data>
+    </string>
+
+    <string name="app_prefix">
+        <Data><![CDATA[
+                <font color="#fa2855">【分红全球购】</font>
+        <font color="#333333">%1$s</font>
+        ]]> </Data>
+    </string>
+
+    <string name="count_fee_color">
+        <Data><![CDATA[
+        <font color="#333333">¥%1$s</font>
+        ]]> </Data>
+    </string>
+
+    <string name="goods_freight_free_color">
+        <Data><![CDATA[
+                <font color="#333333">卖家承担运费</font>
+        ]]> </Data>
+    </string>
+
+    <string name="tips_of_refund_failure">
+        <Data><![CDATA[
+                <font color="#999999">亲爱的会员，根据投诉内容核实，</font><br>
+                 <font color="#999999">退款单号:</font>
+                 <font color="#333333">%1$s</font>
+                 <font color="#999999">，此次退款申请不在商家退款三包范围内，你的退款申诉没有达成。
+                 <br><br>
+                 感谢你的支持。
+                 </font>
+        ]]> </Data>
+    </string>
+
+    <string name="tips_of_refund_apply_failure">
+        <Data>
+            <![CDATA[
+            <font color="#777777" style="line-height:3em;">很遗憾，你的申请卖家已经拒绝了。拒绝理由:</font>
+            <font color="#333333" style="line-height:3em;">%1$s</font>
+            ]]>
+        </Data>
+    </string>
+    <string name="tips_of_refund_apply_failure_with_time">
+        <Data>
+            <![CDATA[
+            <font color="#777777" style="line-height:3em;">很遗憾，你的申请卖家已经拒绝了。拒绝理由:</font>
+            <font color="#333333" style="line-height:3em;">%1$s</font><br><br>
+            <font color="#777777" style="line-height:3em;">时间:%2$s</font>
+            ]]>
+        </Data>
+    </string>
+
+
+    <string name="goods_title_format_dtl">
+        <Data>
+            <![CDATA[
+            <font color="#1a1a1a" >%1$s</font>
+            ]]>
+        </Data>
+    </string>
+
+    <string name="goods_title_format">
+        <Data>
+            <![CDATA[
+            <font color="#6fb0fc" >&nbsp;&nbsp;&nbsp;&nbsp; %1$s</font>
+            <font color="#33333" >%2$s</font>
+            ]]>
+        </Data>
+    </string>
+
+    <string name="goods_detail_baoyou_title">
+        <Data>
+            <![CDATA[
+            满<font color="#fa2855">%1$s</font>包邮
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_xianshi_title">
+        <Data>
+            <![CDATA[
+            限时%1$s折，距结束还剩<font color="#fa2855"><b>%2$s</b>天<b>%3$s</b>时<b>%4$s</b>分<b>%5$s</b>秒</font>
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_prom_bundle_list_title">
+        <Data>
+            <![CDATA[
+            套装%1$s&nbsp;&nbsp;¥%2$s省<font color="#fa2855"><b>%3$s</b>元</font>
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_prom_bundle_price_taozhuang">
+        <Data>
+            <![CDATA[
+            套装价:&nbsp;&nbsp;<font color="#fa2855">¥%1$s</font>
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_prom_single_item_price">
+        <Data>
+            <![CDATA[
+            单买价&nbsp;&nbsp;<font color="#fa2855">¥%1$s</font>
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_prom_mansong_item_title3">
+        <Data>
+            <![CDATA[
+            %1$s、订单满<font color="#fa2855">%2$s</font>元，立减<font color="#fa2855">%3$s</font>元，赠
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_prom_mansong_item_title2">
+        <Data>
+            <![CDATA[
+            %1$s、订单满<font color="#fa2855">%2$s</font>元，立减<font color="#fa2855">%3$s</font>元
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_detail_prom_mansong_item_title1">
+        <Data>
+            <![CDATA[
+            %1$s、订单满<font color="#fa2855">%2$s</font>元，赠
+            ]]>
+        </Data>
+    </string>
+
+    <string name="fmt_bundling_use_bonus">
+        <Data>
+            <![CDATA[
+            <font color="#4497ff">&#xe683;&nbsp;</font><font color="#999999">套装中存在不可使用优惠券的商品</font>
+            ]]>
+        </Data>
+    </string>
+
+    <string name="publish_comment_explain">
+        <Data>
+            <![CDATA[
+            <font color="#333333" size="4px">发表使用心得，</font>
+            <font color="#fa2855" size="6px"><b>赢20积分</b></font>
+            ]]>
+        </Data>
+    </string>
+    <string name="goods_title_nav">
+        <Data>
+            <![CDATA[
+            <font color="#999999">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%1$s</font>
+            <font color="#333333">&nbsp;%2$s</font>
+            ]]>
+        </Data>
+    </string>
+
+    <!--国外及进口商品服务说明-->
+    <string name="store_service_desc_oversea_01">
+        <Data>
+            <![CDATA[
+            <font color="#6fb0fc">购物须知</font><br>
+            <font color="#333333">
+            1. 全球购商品均在海外生产或销售，商品符合海外质量标准。我们承诺正规渠道、100%原
+            装正品。<br>
+            2. 全球购商品均从保税仓或海外发货，预计3-10个工作日送达，偏远地区配送时间有所增
+            长。<br>
+            3. 全球购商品需清关后入境，根据中国海关总署要求，请您提供真实的收货人姓名、身份
+            证信息配合全球购进行个人物品入境申报。我们严格为该信息保密。<br>
+            4. 购买海外商品需依法向中国海关申报及纳税，如产生税费，将由消费者承担。若订单金
+            额超过1000元（购买商品2件（含）以上），海关不支持清关。<br>
+            5. 下单支付后，订单提交至海关申报及纳税，客户将不能修改订单信息（收货地址、电话
+            等），不能取消订单，请知晓并谅解。<br>
+            6. 全球购不提供国内购物发票。<br>
+            7. 收到商品后，如有质量问题，与商家协商一致后，可退货到商家指定的境内地址。
+            </font>
+            ]]>
+        </Data>
+    </string>
+    <string name="store_service_desc_oversea_02">
+        <Data>
+            <![CDATA[
+            <font color="#6fb0fc">关于退换</font><br>
+            <font color="#333333">
+            1. 海外/进口商品因特殊性不支持无质量问题退换货政策；如有质量问题，请在签收到商品的24小时内联系客服协商处理；<br>
+            2. 备货中，不支持中途退单及修改，请务必确认所选规格及地址无误；<br>
+            3. 人为恶意破坏、吊牌被拆、穿过、洗过等产品不提供退换货，请保留好完整包装配件及赠品。<br>
+            4. 退货前请提供清晰图片（包括：保存完整包装以及质量问题图片）提交给客服，否则不予处理。<br>
+            5. 在国际物流运输途中造成挤压或外包装刮痕，不影响使用的情况下不支持退换货。<br>
+            </font>
+             ]]>
+        </Data>
+    </string>
+    <string name="store_service_desc_oversea_03">
+        <Data>
+            <![CDATA[
+            <font color="#6fb0fc">关于客服</font><br>
+            <font color="#333333">
+            售前售后请点击咨询APP详情页左下方的“客服”按钮，或致电分红全球购服务热线4006-888-506。
+            </font>
+             ]]>
+        </Data>
+    </string>
+    <string name="store_service_desc_oversea_04">
+        <Data>
+            <![CDATA[
+            <font color="#6fb0fc">温馨提示</font><br>
+            <font color="#333333">
+            快递员送货上门时，首先检查包裹包装问题，并核实收到商品的数量，如在检查的过程中出现问题，请拒签并拍照 ，
+            在24小时内电话联系店铺客服或分红全球购客服热线（400-6888-506），我们会第一时间为您处理并反馈。
+            </font>
+            ]]>
+        </Data>
+    </string>
+    <string name="store_service_desc_oversea_05">
+        <Data>
+            <![CDATA[
+            <font color="#6fb0fc">包装与生产日期</font><br>
+            <font color="#333333">
+            商品的包装，国外更注重环保和便携性，而不是包装如何奢华，大部分国际一线品牌，奢侈品的包装也很简单，比如产自欧美，日韩的化妆品，大部分无外盒，无塑封，开口处也没用封口贴。
+国外的商品包装上一般不会单独列出保质期是多久，一般只会在产品包装上标注生产日期或有效日期，也有只标注出厂批号没有标注日期的情况，比如日本和欧美的洗护品、化妆品、只有批号没有标日期（有些品牌可以根据批号读取日期，在此不做一一列举）。但请放心，分红全球购海购销售的国外商品都是符合规定的合格产品。有些喷印的日期，在运输过程中因为摩擦碰撞很容易糊掉或被碰掉，是正常现象。各国商品有效期的书写方式，可在页面底部-常见问题中查看详细的介绍哦~
+            </font>
+            ]]>
+        </Data>
+    </string>
+    <string name="seller_explain">
+        <Data>
+            <![CDATA[
+            <font color="#333333">
+            [商家回复]
+            </font>
+            <font>%1$s</font>
+             ]]>
+        </Data>
+    </string>
+    <string name="platform_service">
+        <Data>
+            <![CDATA[
+            <font color="#fa2855">&#xe685;  </font>
+            <font color="#4c4c4c">平台客服</font>
+             ]]>
+        </Data>
+    </string>
+    <string name="contact_seller">
+        <Data>
+            <![CDATA[
+            <font color="#fa2855">&#xe688;  </font>
+            <font color="#4c4c4c">联系卖家</font>
+             ]]>
+        </Data>
+    </string>
+
+    <string name="fmt_miaosha_desc">
+        <Data>
+            <![CDATA[
+            <font color="#6f6f6f">
+                  %1$s
+            </font>
+            <font color="#fa2855">
+                  %2$s
+            </font>
+             ]]>
+        </Data>
+    </string>
+        <string name="fmt_black_red">
+        <Data>
+            <![CDATA[
+            <font color="#333333">
+                  %1$s：
+            </font>
+            <font color="#fa2855">
+                  %2$s
+            </font>
+             ]]>
+        </Data>
+    </string>
+
+    <string name="fmt_miaosha_limit">
+        <Data>
+            <![CDATA[
+            <font color="#fa2855">
+                  &#xe68f;
+            </font>
+            <font color="#333333">
+                  %1$s
+            </font>
+             ]]>
+        </Data>
+    </string>
+
+        <string name="fmt_cart_footer_money">
+        <Data><![CDATA[
+                <font color="#333333">合计：</font>
+        <font color="#fa2855">%1$s</font>
+        ]]> </Data>
+    </string>
+
+        <string name="nation_and_flag">
+        <Data>
+            <![CDATA[
+            <font color="#999999">　　%1$s</font>
+            <font color="#333333">%2$s</font>
+            ]]>
+        </Data>
+    </string>
+
+            <string name="fmt_talent_comment">
+        <Data><![CDATA[
+                <font color="#333333">回复</font>
+        <font color="#fa2855">%1$s</font>
+        <font color="#333333">:%2$s</font>
+        ]]> </Data>
+    </string>
+
+            <string name="fmt_referee">
+        <Data><![CDATA[
+                <font color="#333333">您是由 [ </font>
+        <font color="#fa2855">%1$s</font>
+        <font color="#333333"> ] 推荐</font>
+        ]]> </Data>
+    </string>
+
+                <string name="fmt_brand_goodsnum">
+        <Data><![CDATA[
+                <font color="#999999">在售商品</font>
+        <font color="#fa2855">%1$s</font>
+        <font color="#999999">件</font>
+        ]]> </Data>
+    </string>
+</resources>

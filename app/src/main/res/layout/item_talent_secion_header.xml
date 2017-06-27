@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_16"
+            android:text="3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_of_30" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_5"
+            android:text="@string/month_dot"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_of_16" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_2"
+            android:text="2015"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_of_16" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.fanglin.fhui.CircleImageView
+                android:id="@+id/ivComment"
+                android:layout_width="@dimen/dp_of_25"
+                android:layout_height="@dimen/dp_of_25"
+                android:src="@drawable/default_avatar"
+                app:border_color="@color/white"
+                app:border_width="@dimen/line_width" />
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="20"
+                android:padding="@dimen/tv_padding_4"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tv_padding_4"
+                android:text="@string/app_name"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@style/FHRatingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:isIndicator="true" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding_4"
+            android:text="@string/average_rating"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_65" />
+
+        <TextView
+            android:id="@+id/tv_seller_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_padding_4"
+            android:background="@drawable/bg_top_triangle"
+            android:paddingBottom="@dimen/tv_padding_4"
+            android:paddingLeft="@dimen/tv_padding_4"
+            android:paddingRight="@dimen/tv_padding_4"
+            android:paddingTop="@dimen/dp_of_15"
+            android:text="@string/seller_explain"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_12" />
+
+        <LinearLayout
+            android:id="@+id/ll_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_days_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/tv_padding_4"
+                android:paddingTop="@dimen/tv_padding_4"
+                android:text="@string/days_of_evaluate_after_receive_goods"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_10" />
+
+            <TextView
+                android:id="@+id/tv_content_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tv_padding_4"
+                android:text="追加评价"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_12" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_img_second"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_65" />
+
+            <TextView
+                android:id="@+id/tv_seller_explain_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tv_padding_4"
+                android:background="@drawable/bg_top_triangle"
+                android:paddingBottom="@dimen/tv_padding_4"
+                android:paddingLeft="@dimen/tv_padding_4"
+                android:paddingRight="@dimen/tv_padding_4"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/seller_explain"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/np_light_grey" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.fanglin.fhui.DisableViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:gravity="center"
+            android:text="@string/if_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_20" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_35"
+        android:layout_marginTop="@dimen/dp_of_20"
+        android:gravity="center">
+
+        <ImageView
+            android:contentDescription="@string/qrcode_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_concept_indicator" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/qrcode_cancel"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:src="@drawable/selector_concept_indicator" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/qrcode_cancel"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:src="@drawable/selector_concept_indicator" />
+
+        <ImageView
+            android:contentDescription="@string/qrcode_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:src="@drawable/selector_concept_indicator" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/LSeq"
+        style="@style/MiaoshaRangeItem">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MiaoshaRange"
+            android:text="@string/nine" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/MiaoshaState"
+            android:text="@string/miaosha_ing" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_of_1"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_44"
+        android:background="@color/fh_red"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp_of_44"
+            android:layout_height="match_parent"
+            android:background="@color/fh_red"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_34"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_dutyfreemain_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/tv_padding"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/icon_search_white"
+                android:drawablePadding="@dimen/dp_of_10"
+                android:gravity="center|left"
+                android:text="请输入商品名称"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="@dimen/dp_of_44"
+            android:layout_height="match_parent"
+            android:background="@color/fh_red"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/more_white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+            android:id="@+id/pullToRefreshRecycleView"
+            style="@style/FHRefreshStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/LFloor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

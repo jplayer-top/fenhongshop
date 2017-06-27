@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_22"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_icon_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_success"
+            android:textColor="@color/color_lv"
+            android:textSize="@dimen/dp_of_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_6"
+            android:text="@string/submit_success"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/dp_of_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_of_15"
+        android:layout_marginRight="@dimen/dp_of_15"
+        android:layout_marginTop="@dimen/dp_of_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_submit_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refund_sub_success_desc1"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/dp_of_14" />
+
+        <TextView
+            android:id="@+id/tv_submit_desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_8"
+            android:text="@string/refund_sub_success_desc3"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/dp_of_14" />
+
+        <!--店铺名称-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/merchantin3_shopname"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/dp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_submit_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/dp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_8">
+
+            <!--QQ-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/QQ"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/dp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_submit_QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/dp_of_14" />
+
+            <!--电话-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_20"
+                android:text="@string/telephone"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/dp_of_14" />
+
+            <TextView
+                android:id="@+id/tv_submit_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/dp_of_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_45"
+        android:layout_marginTop="@dimen/dp_of_45"
+        android:paddingLeft="@dimen/dp_of_20"
+        android:paddingRight="@dimen/dp_of_20"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_revocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_weight="1"
+            android:background="@drawable/shape_redstroke_corner"
+            android:gravity="center"
+            android:text="@string/revocation_apply"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/dp_of_15" />
+
+        <View
+            android:layout_width="@dimen/dp_of_20"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_go_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_weight="1"
+            android:background="@drawable/shape_redsolid_corner"
+            android:gravity="center"
+            android:text="@string/btn_text_return"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_of_15" />
+    </LinearLayout>
+
+</LinearLayout>

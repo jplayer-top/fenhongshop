@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_of_10">
+
+    <LinearLayout
+        android:id="@+id/LPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/hint_intput_loginpwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_cfmpwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/hint_confirm_loginpwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <Button
+        android:id="@+id/btn_subimt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_40"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:layout_marginTop="@dimen/dp_of_40"
+        android:background="@drawable/selector_btn_red"
+        android:text="@string/chk_auth_submit"
+        android:textColor="@color/selector_btn_red_color"
+        android:textSize="@dimen/sp_of_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+</LinearLayout>

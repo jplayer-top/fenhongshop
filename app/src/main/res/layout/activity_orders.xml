@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical|start"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:paddingTop="@dimen/tv_padding">
+
+        <LinearLayout
+            android:id="@+id/LAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:text="@string/all"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:layout_width="@dimen/dp_of_40"
+                android:layout_height="@dimen/dp_of_2"
+                android:background="@drawable/selector_underline_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:text="@string/to_pay"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_2"
+                android:background="@drawable/selector_underline_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LRelease"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:text="@string/to_release"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_2"
+                android:background="@drawable/selector_underline_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LDelivery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:text="@string/to_delivery"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_2"
+                android:background="@drawable/selector_underline_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LEvaluate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:singleLine="true"
+                android:text="@string/to_evaluate"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <View
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_2"
+                android:background="@drawable/selector_underline_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+        android:id="@+id/pullToRefreshRecycleView"
+        style="@style/FHRefreshStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/LNoresult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_35"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/order_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_30"
+            android:text="@string/order_empty"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+    </LinearLayout>
+</LinearLayout>

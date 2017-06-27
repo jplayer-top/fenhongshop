@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <View
+        android:layout_width="@dimen/dp_of_60"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/comtop"
+            layout="@layout/comtop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/color_e3"/>
+
+        <ListView
+            android:id="@+id/LV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/color_e3"
+            android:dividerHeight="@dimen/line_width_1"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

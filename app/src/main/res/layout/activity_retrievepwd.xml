@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_login"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_15" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LImgCode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_graydb_stroke_grayf0"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_of_15"
+                android:paddingRight="@dimen/dp_of_15">
+
+                <EditText
+                    android:id="@+id/etImgCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/hint_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/tv_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/color_33"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgCode"
+                android:layout_width="@dimen/dp_of_110"
+                android:layout_height="@dimen/dp_of_35"
+                android:layout_marginLeft="@dimen/dp_of_12"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_captcha"
+                android:text="@string/get_code"
+                android:textColor="@color/selector_btn_red_color"
+                android:textSize="@dimen/sp_of_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_graydb_stroke_grayf0"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_of_15"
+                android:paddingRight="@dimen/dp_of_15">
+
+                <EditText
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/hint_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/tv_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/color_33"
+                    android:textColorHint="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnCode"
+                android:layout_width="@dimen/dp_of_97"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_of_12"
+                android:background="@drawable/selector_code_button"
+                android:gravity="center"
+                android:text="@string/get_code"
+                android:textColor="@color/selector_txtcolor_btncode"
+                android:textSize="@dimen/sp_of_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_26"
+            android:background="@drawable/selector_layout_input_corner"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_of_15"
+            android:paddingRight="@dimen/dp_of_5">
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_setlogin_password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:digits="@string/chars_allow"
+                android:singleLine="true"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+
+            <ImageView
+                android:id="@+id/ivEyes"
+                android:layout_width="@dimen/dp_of_40"
+                android:layout_height="@dimen/dp_of_40"
+                android:background="@color/white"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@drawable/selector_eyes" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubimt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_60"
+            android:background="@drawable/selector_greye6_red_enabled"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_15" />
+
+    </LinearLayout>
+
+
+</ScrollView>

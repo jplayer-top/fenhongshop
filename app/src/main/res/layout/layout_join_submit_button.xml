@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fh_red"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:paddingLeft="@dimen/dp_of_20"
+        android:paddingRight="@dimen/dp_of_20"
+        android:paddingTop="@dimen/dp_of_15"
+        android:text="@string/merchant_join_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_of_20"/>
+</LinearLayout>

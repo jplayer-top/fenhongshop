@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/tv_padding"
+    android:paddingRight="@dimen/tv_padding">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/dp_of_100"
+        android:layout_height="@dimen/dp_of_100"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_goods_img" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="@dimen/dp_of_136"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_15"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="2"
+        android:text="完美白净透白润8片装你值得拥有!"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_13" />
+
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_15"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="$32 (约¥115.00）"
+        android:textColor="@color/fh_red"
+        android:textSize="@dimen/sp_of_13" />
+</LinearLayout>

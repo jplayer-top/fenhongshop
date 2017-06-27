@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PullToNextLayout</string>
+
+
+
+    <string name="ptn_no_more_data">没有更多信息</string>
+    <string name="ptn_release_to_next">放手查看下一个</string>
+    <string name="ptn_pull_up_to_next">上拉查看下一个</string>
+    <string name="ptn_the_first">已经是第一个了</string>
+    <string name="ptn_release_to_previous">放手查看前一个</string>
+    <string name="ptn_pull_down_to_previous">下拉查看前一个</string>
+
+
+
+
+</resources>

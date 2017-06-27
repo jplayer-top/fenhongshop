@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_notsupportgoods"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_of_15"
+        android:text="修改数量"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_of_25"
+        android:layout_marginRight="@dimen/dp_of_25"
+        android:background="@drawable/selector_stroke"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMinus"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/color_66" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:background="@color/color_e3" />
+
+        <EditText
+            android:id="@+id/etNum"
+            android:layout_width="@dimen/dp_of_100"
+            android:layout_height="@dimen/dp_of_40"
+            android:background="@android:color/transparent"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:imeActionLabel="确定"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:text="@string/one"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_16" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            android:background="@color/color_e3" />
+
+        <TextView
+            android:id="@+id/tvPlus"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/color_66" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_weight="1"
+            android:background="@drawable/shape_red_button_notsupportgoods"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:background="@color/fh_red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_57">
+
+        <TextView
+            android:id="@+id/tvGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="商品"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_41"
+            android:gravity="center"
+            android:text="品牌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="@dimen/dp_of_234"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginLeft="@dimen/dp_of_57"
+            android:background="@drawable/editbg_duty_search"
+            android:gravity="center_vertical"
+            android:hint="搜索商品 分类"
+            android:imeActionLabel="搜索"
+            android:paddingLeft="@dimen/dp_of_12"
+            android:paddingTop="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textColorHint="@color/color_99"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_23"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+</LinearLayout>

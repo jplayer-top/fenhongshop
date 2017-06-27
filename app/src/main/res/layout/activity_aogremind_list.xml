@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <!--topbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_48"
+        android:layout_marginBottom="@dimen/dp_of_1"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp_of_48"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_remind"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/comtop_headtv_size" />
+
+        <TextView
+            android:id="@+id/tvOption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp_of_10"
+            android:text="@string/edit"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_16" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--goods list-->
+        <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+            android:id="@+id/pullToRefreshRecycleView"
+            style="@style/FHRefreshStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            style="@style/FHProgressBar"
+            android:id="@+id/progressBar" />
+    </FrameLayout>
+
+    <!--bottom action bar-->
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/dp_of_1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cbSelectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:button="@drawable/selector_checkbox_red_gray"
+            android:checked="true"
+            android:text="@string/select_all_"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="@dimen/dp_of_100"
+            android:layout_height="match_parent"
+            android:background="@color/color_bb"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_of_16" />
+    </LinearLayout>
+</LinearLayout>

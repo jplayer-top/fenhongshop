@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/FStoreBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_160"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivStoreBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_storebg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_half" />
+
+        <ImageView
+            android:id="@+id/ivStoreLogo"
+            android:layout_width="@dimen/dp_of_60"
+            android:layout_height="@dimen/dp_of_30"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_themeone_hotgoods_onlybanner" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="@dimen/dp_of_20"
+            android:text="日本の良品"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_17" />
+
+        <ImageView
+            android:id="@+id/ivCollect"
+            android:layout_width="@dimen/dp_of_23"
+            android:layout_height="@dimen/dp_of_23"
+            android:layout_gravity="right|top"
+            android:layout_margin="@dimen/dp_of_20"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/selector_store_focus" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/LRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_16"
+            android:layout_marginTop="@dimen/dp_of_16"
+            android:text="@string/lbl_storenotice"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvNotice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_10"
+            android:layout_marginLeft="@dimen/dp_of_16"
+            android:layout_marginRight="@dimen/dp_of_16"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:text="春节期间不发货，偏远地区自付运费。"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LSpliter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_of_10"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvSpliter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/tv_padding"
+            android:drawableRight="@drawable/icon_triangle_gray_down"
+            android:text="@string/lbl_expand"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+</LinearLayout>

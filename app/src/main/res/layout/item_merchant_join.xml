@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0.1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/tv_cls1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="@string/merchantin_account"
+            android:textColor="#a9a9a9"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/tv_cls2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="@string/merchantin_account"
+            android:textColor="#a9a9a9"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/tv_cls3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="@string/merchantin_account"
+            android:textColor="#a9a9a9"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/tv_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="@string/delete"
+            android:textColor="#ff4b4b"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/color_e3" />
+
+</LinearLayout>

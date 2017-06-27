@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/shape_shopqrcode_corner"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStoreName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_of_10"
+                android:padding="@dimen/dp_of_10"
+                android:singleLine="true"
+                android:text="店铺：分红全球购"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivStoreBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="center"
+                    android:src="@drawable/default_storebg" />
+
+                <ImageView
+                    android:id="@+id/ivStoreLogo"
+                    android:layout_width="@dimen/dp_of_60"
+                    android:layout_height="@dimen/dp_of_60"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/default_avatar" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_of_40"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_20">
+
+                <ImageView
+                    android:id="@+id/ivQrcode"
+                    android:layout_width="@dimen/dp_of_70"
+                    android:layout_height="@dimen/dp_of_70"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/self_support" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_of_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/tips_shopQrcode"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_red_close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:drawableLeft="@drawable/icon_download"
+        android:drawablePadding="@dimen/tv_padding"
+        android:gravity="center"
+        android:padding="@dimen/tv_padding"
+        android:text="保存图片到相册"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_of_14" />
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/LOutSide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/dp_of_300"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_of_15"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/order_cancel_reason"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_20"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/fh_red"/>
+
+            <TextView
+                android:id="@+id/tv_quit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_of_15"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/order_cancel_0"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_18"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_1"
+                android:background="@color/color_e3"/>
+
+            <TextView
+                android:id="@+id/tv_msgerr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_of_15"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/order_cancel_1"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_18"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_1"
+                android:background="@color/color_e3"/>
+
+            <TextView
+                android:id="@+id/tv_payerr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_of_15"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/order_cancel_2"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_18"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_1"
+                android:background="@color/color_e3"/>
+
+            <TextView
+                android:id="@+id/tv_duppay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_of_15"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/order_cancel_3"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_18"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width_1"
+                android:background="@color/color_e3"/>
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_of_15"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_15"
+                android:text="@string/order_cancel_4"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_18"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="@dimen/dp_of_1"
+        android:layout_height="match_parent"/>
+</LinearLayout>

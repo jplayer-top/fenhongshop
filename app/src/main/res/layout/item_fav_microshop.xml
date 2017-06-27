@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="@dimen/dp_of_30"
+            android:layout_height="match_parent"
+            android:button="@drawable/selector_checkbox_red_gray"
+            android:checked="true"
+            android:textColor="@color/color_33" />
+
+        <com.fanglin.fhui.CircleImageView
+            android:id="@+id/sdv"
+            android:layout_width="@dimen/dp_of_63"
+            android:layout_height="@dimen/dp_of_63"
+            android:src="@drawable/default_avatar"
+            app:border_color="@color/white"
+            app:border_width="@dimen/line_width" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_18"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tv_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="@string/zero"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/max_width"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3"/>
+</LinearLayout>
+

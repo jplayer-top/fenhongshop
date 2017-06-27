@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="TOP" type="id">0x11</item>
+    <item name="HOME" type="id">0x12</item>
+    <item name="SHARE" type="id">0x12</item>
+    <item name="MSG" type="id">0x14</item>
+</resources>

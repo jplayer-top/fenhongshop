@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/mswipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/color_huang"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_of_20"
+                android:paddingRight="@dimen/dp_of_20"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_16"/>
+
+            <TextView
+                android:id="@+id/tv_red"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_color_calculate"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_of_20"
+                android:paddingRight="@dimen/dp_of_20"
+                android:text="@string/delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_16"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_of_10">
+
+            <TextView
+                android:id="@+id/tv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:text="@string/if_why"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_32"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_cardinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_14"/>
+                <TextView
+                    android:id="@+id/tv_check_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tv_padding_3"
+                    android:background="@color/white"
+                    android:text="@string/if_check"
+                    android:textSize="@dimen/sp_of_10"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+    <View
+        android:id="@+id/vline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@color/color_e3"/>
+</LinearLayout>

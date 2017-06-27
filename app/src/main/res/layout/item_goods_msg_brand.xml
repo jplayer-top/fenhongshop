@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/LContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_10"
+            android:background="@color/com_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_of_14"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10"
+            android:paddingTop="@dimen/dp_of_16">
+
+            <ImageView
+                android:id="@+id/ivBrandLogo"
+                android:layout_width="@dimen/dp_of_50"
+                android:layout_height="@dimen/dp_of_50"
+                android:background="@drawable/shape_grey_stroke"
+                android:padding="@dimen/line_width"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/default_goods_img" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginRight="@dimen/dp_of_10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBrandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEDIHEAL美迪惠尔"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvBrandGoodsNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_of_12"
+                    android:text="在售商品18件"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvIntoBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_into_brand"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBrandDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.3"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10"
+            android:text="MEDIHEAL，韩国LP（株）化妆品公司旗下护肤品牌。于 2009年4月推出，随即其推出的针剂面膜销售十分..."
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_190"
+            android:layout_marginTop="@dimen/dp_of_14"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

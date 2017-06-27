@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:orientation="horizontal">
+
+        <com.fanglin.fhui.FHEditText
+            android:id="@+id/etNick"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_50"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_input_nick"
+            android:paddingLeft="@dimen/tv_padding"
+            android:textColor="@color/color_33"
+            android:maxLength="20"
+            app:limitInputReg="@string/reg_nick"
+            android:textSize="@dimen/sp_of_15" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="@dimen/dp_of_50"
+            android:layout_height="@dimen/dp_of_50"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/login_clear"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <TextView
+        android:id="@+id/tvTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:text="4-20个字符，可由中英文、数字、“- +”组成\nxxx天后可修改昵称"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/sp_of_12" />
+</LinearLayout>

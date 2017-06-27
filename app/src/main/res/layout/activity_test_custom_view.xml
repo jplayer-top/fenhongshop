@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/fh_red">
+
+        <com.fanglin.fhui.custom.Custom3LinesLayout
+            android:id="@+id/custom3LinesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:bgRes="@color/weibo" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_marginLeft="@dimen/dp_of_150"
+            android:layout_width="@dimen/dp_of_150"
+            android:layout_height="@dimen/dp_of_1"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_20"
+            android:background="@color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对称变换" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变文字 1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变文字 2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改变文字 3" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/fh_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="禁止滑动"
+            android:textColor="@color/white" />
+
+        <com.fanglin.fhui.custom.Custom3LinesLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            custom:allowSlide="false" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/fh_red">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无回弹效果"
+            android:textColor="@color/white" />
+
+        <com.fanglin.fhui.custom.Custom3LinesLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            custom:allowSpringback="false" />
+    </RelativeLayout>
+</LinearLayout>

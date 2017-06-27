@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_60"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_edit_avatar"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_of_14" />
+
+
+        <com.fanglin.fhui.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/default_avatar"
+            app:border_color="@color/white"
+            app:border_width="@dimen/line_width_1" />
+
+        <TextView
+            android:id="@+id/tvHeadIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_1"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:layout_marginRight="@dimen/dp_of_8"
+            android:background="@color/color_e3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_60"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_talent_bg"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_of_14" />
+
+
+        <ImageView
+            android:id="@+id/ivBg"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_goods_img" />
+
+        <TextView
+            android:id="@+id/tvBgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_1"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:layout_marginRight="@dimen/dp_of_8"
+            android:background="@color/color_e3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LNick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_60"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:text="@string/nick"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+
+        <EditText
+            android:id="@+id/etNick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:maxLength="12"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width_1"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:layout_marginRight="@dimen/dp_of_8"
+            android:background="@color/color_e3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LMotto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_20"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:text="@string/lbl_edit_motto"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+
+        <EditText
+            android:id="@+id/etMotto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right|top"
+            android:hint="@string/hint_talent_motto"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_13" />
+
+    </LinearLayout>
+
+</LinearLayout>

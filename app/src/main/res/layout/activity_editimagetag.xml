@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/FContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:src="@drawable/default_goods_img"
+                android:layout_width="@dimen/dp_of_300"
+                android:layout_height="@dimen/dp_of_300"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvMemo"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_of_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_55"
+            android:layout_marginRight="@dimen/dp_of_55"
+            android:lineSpacingExtra="@dimen/tv_padding"
+            android:text="点击图片任何位置，继续关联商品 点击圆点可切换展示样式，长按圆点可删除"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hint_redbg_not9"
+            android:gravity="center"
+            android:paddingBottom="@dimen/tv_padding"
+            android:text="点击图片任意位置添加标签"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_14" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/dp_of_10" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_red_point" />
+    </LinearLayout>
+</FrameLayout>

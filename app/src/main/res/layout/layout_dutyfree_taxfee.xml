@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_55"
+        android:gravity="center"
+        android:text="@string/hsrate"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_17" />
+
+
+    <View
+        android:id="@+id/vTaxfee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <TextView
+        android:id="@+id/tvTaxfee"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_40"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:text="@string/zero"
+        android:textColor="@color/fh_red"
+        android:textSize="@dimen/sp_of_15" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <TextView
+        android:id="@+id/tvTaxdesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/dp_of_10"
+        android:text="本商品包税，无需再额外缴纳。"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/sp_of_12" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_of_20"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_duty_close" />
+
+</LinearLayout>

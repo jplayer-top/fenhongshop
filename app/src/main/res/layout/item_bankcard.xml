@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+        <TextView
+            android:id="@+id/tv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/if_check"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_10"/>
+
+        <TextView
+            android:id="@+id/tv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:text="@string/if_why"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_32"/>
+
+        <TextView
+            android:id="@+id/tv_cardinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14"/>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/tv_padding"
+            android:text="@string/edit"
+            android:textSize="@dimen/sp_of_16"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@color/color_e3"/>
+</LinearLayout>

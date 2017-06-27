@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fanglin.fhui.DisableViewPager
+        android:id="@+id/mpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/RHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_of_8"
+            android:paddingTop="@dimen/dp_of_8">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="@dimen/dp_of_35"
+                android:layout_height="@dimen/dp_of_35"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_tab_home"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_of_8"
+            android:paddingTop="@dimen/dp_of_8">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="@dimen/dp_of_35"
+                android:layout_height="@dimen/dp_of_35"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_tab_category" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RFind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_of_8"
+            android:paddingTop="@dimen/dp_of_8">
+
+            <ImageView
+                android:id="@+id/ivFind"
+                android:layout_width="@dimen/dp_of_35"
+                android:layout_height="@dimen/dp_of_35"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_tab_find" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_of_8"
+            android:paddingTop="@dimen/dp_of_8">
+
+            <ImageView
+                android:id="@+id/ivCart"
+                android:layout_width="@dimen/dp_of_35"
+                android:layout_height="@dimen/dp_of_35"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_tab_cart" />
+
+
+            <TextView
+                android:id="@+id/tvCartNum"
+                android:layout_width="@dimen/dp_of_15"
+                android:layout_height="@dimen/dp_of_15"
+                android:layout_alignRight="@+id/ivCart"
+                android:layout_gravity="top|center"
+                android:background="@drawable/bg_cart_num"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="99+"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_of_6"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RPersonal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dp_of_8"
+            android:paddingTop="@dimen/dp_of_8">
+
+            <ImageView
+                android:id="@+id/ivPersonal"
+                android:layout_width="@dimen/dp_of_35"
+                android:layout_height="@dimen/dp_of_35"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/selector_tab_personal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

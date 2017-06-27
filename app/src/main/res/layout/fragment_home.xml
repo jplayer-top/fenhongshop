@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/LTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_46"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/tv_padding_4">
+
+            <RelativeLayout
+                android:id="@+id/LMsg"
+                android:layout_width="@dimen/dp_of_40"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_msg" />
+
+                <TextView
+                    android:id="@+id/tvMsgNum"
+                    android:layout_width="@dimen/sp_of_14"
+                    android:layout_height="@dimen/sp_of_14"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/dp_of_4"
+                    android:background="@drawable/shape_circle"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_of_6" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LShare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/tv_padding"
+                android:paddingRight="@dimen/dp_of_10">
+
+                <TextView
+                    android:id="@+id/tvIconShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/if_share"
+                    android:textColor="@color/color_66"
+                    android:textSize="@dimen/sp_of_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/tv_padding_3"
+                    android:gravity="center"
+                    android:text="@string/msg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_of_12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/LSearch"
+            style="@style/FHSearchContainer"
+            android:layout_width="@dimen/dp_of_260"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvTitleSearchIcon"
+                style="@style/FHSearchIcon" />
+
+            <TextView
+                android:id="@+id/tvTitleText"
+                style="@style/FHSearchTextView"
+                android:text="@string/home_title_search_text" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#464646" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/LDoing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/FHProgressBar" />
+
+        <ImageView
+            android:id="@+id/ivRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/networkerror"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRefresh"
+            android:layout_width="@dimen/dp_of_110"
+            android:layout_height="@dimen/dp_of_35"
+            android:layout_marginTop="@dimen/dp_of_25"
+            android:background="@drawable/shape_redstroke_corner"
+            android:gravity="center"
+            android:text="@string/load_again"
+            android:textColor="@color/fh_red" />
+    </LinearLayout>
+
+</LinearLayout>

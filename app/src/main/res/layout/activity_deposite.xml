@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_of_10">
+
+            <TextView
+                android:id="@+id/tv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_add"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_20" />
+
+            <TextView
+                android:id="@+id/tv_cardinfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/add_a_bankcard"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_2right"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_avaliable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/dp_of_10"
+            android:text="@string/fmt_deposit_amount"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:background="@color/white"
+            android:hint="@string/hint_deposit_amount"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/dp_of_10"
+            android:singleLine="true"
+            android:textColorHint="@color/color_e3"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tv_paypwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/dp_of_10"
+            android:text="@string/tips_deposit_pwd"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_12" />
+
+        <EditText
+            android:id="@+id/et_paypwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:background="@color/white"
+            android:hint="@string/hint_deposit_pwd"
+            android:inputType="textPassword"
+            android:padding="@dimen/dp_of_10"
+            android:singleLine="true"
+            android:textColorHint="@color/color_e3"
+            android:textSize="@dimen/sp_of_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_50"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_of_10">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_40"
+                android:background="@drawable/selector_btn_red"
+                android:text="@string/deposit_submit"
+                android:textColor="@color/selector_btn_red_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_40"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_of_10">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_99"
+                android:lineSpacingMultiplier="1.5"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

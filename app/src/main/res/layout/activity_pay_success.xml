@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg">
+
+    <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+        android:id="@+id/pullToRefreshRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/FHRefreshStyle"/>
+
+    <Button
+        android:id="@+id/btn_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:textColor="@color/fh_red"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_of_18"
+        android:layout_marginBottom="@dimen/dp_of_15"
+        android:background="@drawable/bg_of_btn_bonus"
+        android:visibility="visible" />
+</FrameLayout>

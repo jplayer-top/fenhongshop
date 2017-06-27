@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_of_30"
+        android:gravity="center"
+        android:text="@string/alipay_intall_hint"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/dp_of_16"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_20"
+        android:gravity="center"
+        android:text="@string/alipay_intall_cancel"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/dp_of_14"/>
+
+</LinearLayout>

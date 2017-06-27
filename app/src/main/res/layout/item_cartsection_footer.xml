@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding_3"
+                    android:text="@string/goods_fee"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_13" />
+
+                <TextView
+                    android:id="@+id/tv_goods_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/tv_padding_3"
+                    android:text="@string/zero"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_13" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding_3"
+                    android:text="@string/global_tax_fee"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_13" />
+
+                <TextView
+                    android:id="@+id/tv_taxfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/tv_padding_3"
+                    android:text="@string/zero"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/tv_padding_3"
+                    android:text="@string/activity_fee"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_13" />
+
+                <TextView
+                    android:id="@+id/tv_activityfee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|right"
+                    android:padding="@dimen/tv_padding_3"
+                    android:text="@string/zero"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_13" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/tv_padding_4"
+            android:paddingBottom="@dimen/dp_of_10"
+            android:paddingLeft="@dimen/tv_padding_3"
+            android:paddingTop="@dimen/dp_of_10"
+            android:text="@string/hint_seatax"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/LChk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_of_10">
+
+            <TextView
+                android:id="@+id/cb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_checkbox_red_gray" />
+
+            <TextView
+                android:id="@+id/tv_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_20"
+                android:text="@string/select_all"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_of_13"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/count_money_cart"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/nofreight_tips"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_color_calculate"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_of_20"
+            android:paddingRight="@dimen/dp_of_20"
+            android:text="@string/fmt_pay_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_16" />
+    </LinearLayout>
+</LinearLayout>

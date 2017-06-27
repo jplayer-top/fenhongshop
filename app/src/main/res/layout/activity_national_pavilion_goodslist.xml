@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_filter_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_50"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_filter_default"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/default_filter"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <TextView
+                android:id="@+id/tv_filter_salesnum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/salesnum"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_filter_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/price"
+                    android:textColor="@color/selector_tab_txt_color"
+                    android:textSize="@dimen/sp_of_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_price_arrow_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/if_trigup"
+                        android:textColor="@color/selector_tab_txt_color"
+                        android:textSize="@dimen/sp_of_4" />
+
+                    <TextView
+                        android:id="@+id/tv_price_arrow_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_of_2"
+                        android:gravity="center"
+                        android:text="@string/if_trigdown"
+                        android:textColor="@color/selector_tab_txt_color"
+                        android:textSize="@dimen/sp_of_4" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_filter_popular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/popular"
+                android:textColor="@color/selector_tab_txt_color"
+                android:textSize="@dimen/sp_of_16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/color_e3" />
+
+        <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+            android:id="@+id/pullToRefreshRecycleView"
+            style="@style/FHRefreshStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_top"
+        android:visibility="gone" />
+</RelativeLayout>

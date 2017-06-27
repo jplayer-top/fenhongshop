@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_of_72">
+
+    <LinearLayout
+        android:id="@+id/llArrow"
+        android:layout_width="@dimen/dp_of_25"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dp_of_5"
+            android:layout_height="@dimen/dp_of_9"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:src="@drawable/icon_arrow_right_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddressShow"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_of_72"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAddressName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_21"
+            android:layout_marginTop="@dimen/dp_of_15"
+            android:text="张宝宝        156****5775"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_9"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_of_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_20"
+                android:src="@drawable/icon_pick_address" />
+
+            <TextView
+                android:id="@+id/tvAddressDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/dp_of_5"
+                android:text="山东省青岛市市南区软件园7号楼7楼 芳林信息"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_11" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_of_9"
+        android:scaleType="fitXY"
+        android:src="@drawable/colorline" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_of_1"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:id="@+id/llRelevance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/dp_of_25"-->
+        <!--android:layout_height="@dimen/dp_of_25"-->
+        <!--android:src="@drawable/addaddr" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="+"
+            android:textColor="#FA2855"
+            android:textSize="@dimen/sp_of_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:text="添加收货地址" />
+    </LinearLayout>
+</RelativeLayout>

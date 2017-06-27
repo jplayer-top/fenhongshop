@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LBrand"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_brand"
+            android:contentDescription="@string/qrcode_cancel"
+            android:layout_width="@dimen/dp_of_75"
+            android:layout_height="@dimen/dp_of_25"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_banner"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:text="@string/a_time"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+</LinearLayout>

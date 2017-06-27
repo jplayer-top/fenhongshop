@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_130"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/hint_talentimages"
+        android:padding="@dimen/dp_of_15"
+        android:textColorHint="@color/color_99"
+        android:textSize="@dimen/sp_of_13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_30"
+        android:background="@color/white"
+        android:gravity="right"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/dp_of_8">
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_location_black"
+            android:drawablePadding="@dimen/dp_of_4"
+            android:gravity="center"
+            android:text="不显示位置"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标签"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvTagCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0/10"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tagRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_35"
+            android:layout_marginBottom="@dimen/dp_of_6"
+            android:layout_marginTop="@dimen/dp_of_20" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_talentimage"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvTimeCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0/5"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/timeRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_60"
+            android:layout_marginBottom="@dimen/dp_of_6"
+            android:layout_marginTop="@dimen/dp_of_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_linkgoods"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvGoodsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0/10"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/goodsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_60"
+            android:layout_marginBottom="@dimen/dp_of_6"
+            android:layout_marginTop="@dimen/dp_of_15" />
+    </LinearLayout>
+
+</LinearLayout>

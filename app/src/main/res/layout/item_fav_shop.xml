@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/tv_padding">
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="@dimen/dp_of_30"
+                android:layout_height="match_parent"
+                android:button="@drawable/selector_checkbox_red_gray"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_of_10"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <ImageView
+                android:id="@+id/store_img"
+                android:contentDescription="@string/qrcode_cancel"
+                android:layout_width="@dimen/dp_of_30"
+                android:layout_height="@dimen/dp_of_30"
+                android:layout_marginRight="@dimen/tv_padding_5"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_goods_img" />
+
+            <TextView
+                android:id="@+id/tv_store_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:padding="@dimen/tv_padding"
+                android:text="@string/app_name"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/FHRatingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:rating="2.05" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/color_e3" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_150"
+            android:paddingBottom="@dimen/dp_of_8"
+            android:paddingTop="@dimen/dp_of_8" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+</LinearLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/com_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <com.fanglin.fhui.flowlayout.TagFlowLayout
+            android:id="@+id/goods_flow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:max_select="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10"
+            android:paddingTop="@dimen/dp_of_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/price_taozhuang_lbl"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16"/>
+            <TextView
+                android:id="@+id/tv_price_taozhuang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:text="@string/zero"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_of_10"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/price_original"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_16"/>
+            <TextView
+                android:id="@+id/tv_price_original_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="0"
+
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_16"/>
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="0"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_18"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

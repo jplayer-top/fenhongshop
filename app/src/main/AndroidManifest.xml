@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fanglin.fenhong.microbuyer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".FHApp"
+        android:allowBackup="true"
+        android:icon="@drawable/fhicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+        <activity
+            android:name=".common.FHBrowserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".buyer.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimUp"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".buyer.LoginActivityWithAccount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".buyer.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".buyer.RetrievePwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".buyer.CategoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".buyer.Category2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.GoodsListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".buyer.GoodsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.goodsdetail.GoodsRecommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.FavoritesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CollectionsIndicators" />
+        <activity
+            android:name=".buyer.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.GoodsPromBundleSingleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.GoodsPromBundleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.FreeFreightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.TaozhuangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.MansongActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".buyer.EditNickActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".common.SelectAreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.CartCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.OrderDtlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.OrderMergeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.Express100Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.FHExpressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsSubSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsApplyFailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsApplySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsRefundSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsProcessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ReturnGoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.NationalPavilionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.NationalPavilionGoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.FeedBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.MsgCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.MsgListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ActListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.ActListDtlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.FancyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.HotBrandsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.HotBrandsDtlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.PointsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.PaySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.PlatformCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.StoreActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.GoodsEvaluateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.TestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".common.ConceptActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".common.GroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".common.StoreNewGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".common.StoreGoodsClassActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".common.StoreGoodsListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".microshop.FancyShopListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.FancyShopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.ShareListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.MicroshopListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.DepositeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".microshop.DepositeDtlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.SetPayPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.EditBankCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".microshop.TeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.CommissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.BalanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.BonusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.SelectBonusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.InputPaypwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.BankCardListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".microshop.TalentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <activity
+            android:name=".microshop.TalentImagesDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".microshop.EditTalentImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".microshop.TalentTagSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".microshop.LinkGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".microshop.LinkedGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".microshop.EditImageTagActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".microshop.FansListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".microshop.TalentLoveGoodsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".microshop.TalentTimesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".microshop.EditTalentInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".merchant.joinstep.JoinStepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".merchant.joinstep.JoinstepPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".merchant.joinstep.JoinstepPayofflineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".merchant.joinstep.EditTipsAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".merchant.joinstep.SelectStoreCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".merchant.joinstep.SelectStoreClsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".merchant.joinstep.SelectStoreGradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DFGoodsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.OrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.SellerQrcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyFreeMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DFStyledIndicators" />
+        <activity
+            android:name=".dutyfree.DutyfreeSearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".dutyfree.DutyfreeGoodsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeCartCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeBindAddrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyAddrListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyNewAddrsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeBrandlistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyBrandAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyCategoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyPayOfflineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeBrandDtlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreePersonalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeConsumeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreeConsumeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dutyfree.DutyfreePersonalInviteActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".dutyfree.DutyfreePersonalMessagesActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 程序崩溃采集 -->
+        <activity
+            android:name=".wxapi.CrashActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 信鸽配置项 Begin -->
+
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.fanglin.fenhong.microbuyer.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.fanglin.fenhong.microbuyer.base.receiver.FHMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100142897" />
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="AWQP9Q827V8D" />
+
+        <!-- 信鸽配置项 End -->
+
+        <!-- 百度定位 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="K56GTB72vIMGQsMvur3iXG54" />
+
+        <!-- 腾讯地图 -->
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="FQYBZ-CKSRF-G2LJD-JW6HF-DPQKK-RSFCF" />
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${FH_CHANNEL_NAME}" />
+
+        <!-- ShareSDK 一键分享 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+                QZoneWebShareAdapter表示一个继承自cn.sharesdk.tencent.qzone.QZoneWebShareAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获QQ空间网页分享权页面的各种UI控件。
+            	开发者可以通过继承QZoneWebShareAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data
+                android:name="QZoneWebShareAdapter"
+                android:value="cn.sharesdk.tencent.qzone.QZoneWebShareAdapter" />
+
+            <intent-filter>
+
+                <!-- QQ APPID -->
+                <data android:scheme="tencent1104541562" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|fontScale"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx29d0b39224869fe3" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".common.EvaluateBeforeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.EvaluationPointDescActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".buyer.MiaoshaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.AOGRemindListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".base.baseui.imagebrowser.ImageBrowserActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".base.receiver.NetworkChangedReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".common.TestCustomViewActivity" />
+        <activity
+            android:name=".microshop.EditMicroshopInfoActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

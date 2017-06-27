@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_60"
+        android:background="@color/transparent_white_B2"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+        <LinearLayout
+            android:id="@+id/tv_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_store_home"
+                android:textColor="@color/color_33"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_2"
+                android:text="@string/tab_home"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_icon_search"
+                android:textColor="@color/color_33"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_2"
+                android:text="@string/search"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_icon_msg"
+                android:textColor="@color/color_33"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_2"
+                android:text="@string/msg"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tv_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_share"
+                android:textColor="@color/color_33"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_2"
+                android:text="@string/share"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_B2"/>
+
+</LinearLayout>

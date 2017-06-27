@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_of_10">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/sdv"
+                    android:layout_width="@dimen/dp_of_100"
+                    android:layout_height="@dimen/dp_of_100"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_goods_img" />
+
+                <ImageView
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/iv_top"
+                    android:layout_width="@dimen/dp_of_60"
+                    android:layout_height="@dimen/dp_of_60"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:orientation="vertical">
+
+                <!--国旗 与 描述-->
+                <LinearLayout
+                    android:id="@+id/ll_nation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/iv_nation_flag"
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/default_banner"
+                        android:layout_width="@dimen/dp_of_20"
+                        android:layout_height="@dimen/dp_of_14"/>
+
+                    <TextView
+                        android:id="@+id/tv_nation_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_of_6"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/sp_of_12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/dp_of_8"
+                    android:text="ORIHIRO 进口低分子玻尿酸胶原蛋白太胶原蛋白粉 180g/袋"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_14"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dp_of_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_price_fhmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/dp_of_5"
+                        android:singleLine="true"
+                        android:text="¥1105"
+                        android:textColor="@color/fh_red"
+                        android:textSize="@dimen/sp_of_14"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_price_market"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_of_10"
+                        android:singleLine="true"
+                        android:text="¥1215"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/sp_of_14" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/iv_flag_global"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:src="@drawable/flag_global"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:background="@color/color_e3" />
+</LinearLayout>
+

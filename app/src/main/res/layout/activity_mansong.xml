@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_manjian"
+            android:textColor="@color/fh_red" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/tv_padding"
+            android:text="@string/app_name"
+            android:textColor="@color/fh_red" />
+
+        <TextView
+            android:id="@+id/tv_tips_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        style="@style/FHRefreshStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tv_padding_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculate"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_15" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yuan_"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_padding_2"
+                android:layout_marginLeft="@dimen/tv_padding_5"
+                android:text="@string/count_num_free_freight"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_color_calculate"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_of_20"
+            android:paddingRight="@dimen/dp_of_20"
+            android:text="@string/to_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_16" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:id="@+id/LGrp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/tv_padding">
+
+        <TextView
+            android:id="@+id/tvDefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/tv_padding"
+            
+            android:text="@string/default_filter"
+            android:textColor="@color/selector_tab_txt_color" />
+
+        <TextView
+            android:id="@+id/tvSales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/tv_padding"
+            android:text="@string/salesnum"
+            android:textColor="@color/selector_tab_txt_color" />
+
+        <LinearLayout
+            android:id="@+id/LPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/tv_padding"
+                android:text="@string/price"
+                android:textColor="@color/selector_tab_txt_color" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/if_trigup"
+                    android:textColor="@color/selector_trig_txt_color"
+                    android:textSize="@dimen/sp_of_6"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tvDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/if_trigdown"
+                    android:textColor="@color/selector_trig_txt_color"
+                    android:textSize="@dimen/sp_of_6"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPopular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/tv_padding"
+            android:text="@string/popular"
+            android:textColor="@color/selector_tab_txt_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+</LinearLayout>

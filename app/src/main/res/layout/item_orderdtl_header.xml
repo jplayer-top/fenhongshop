@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_90"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_15">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/dp_of_60"
+            android:layout_height="@dimen/dp_of_60"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_goods_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:lines="2"
+                android:text="Michael Kors迈克科尔斯女士单肩 时尚新款 手提包真皮女包"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ 620.00"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvActivityDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tv_padding"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="VIP价"
+                    android:textColor="@color/color_66"
+                    android:textSize="@dimen/sp_of_10"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="X10"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</LinearLayout>

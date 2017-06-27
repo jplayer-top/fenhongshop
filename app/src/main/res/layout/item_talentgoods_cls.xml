@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:layout_height="@dimen/dp_of_26"
+        android:layout_marginBottom="@dimen/dp_of_15"
+        android:layout_marginLeft="@dimen/dp_of_2"
+        android:layout_marginRight="@dimen/dp_of_15"
+        android:layout_marginTop="@dimen/dp_of_15"
+        android:background="@drawable/selector_talentgoods_cls_corner"
+        android:gravity="center"
+        android:text="全部商品"
+        android:textColor="@color/selector_red_c99"
+        android:textSize="@dimen/sp_of_13" />
+</LinearLayout>

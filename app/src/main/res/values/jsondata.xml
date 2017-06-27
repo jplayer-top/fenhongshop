@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="store_flow">
+        <Data><![CDATA[
+[
+    {
+        \"id\": \"2\",
+        \"mid\": \"188\",
+        \"store_id\": \"50092\",
+        \"type_id\": \"2\",
+        \"content\": \"店主推荐\",
+        \"isshow\": \"1\",
+        \"sort\": \"1\",
+        \"goods_id\": \"\",
+        \"goods_list\": [
+            {
+                \"goods_id\": \"19\",
+                \"goods_name\": \"约克公爵实木家具欧美田园DY08-038餐椅正品\",
+                \"goods_price\": \"2058.00\",
+                \"goods_promotion_price\": \"2058.00\",
+                \"goods_marketprice\": \"2058.00\",
+                \"goods_image\": \"http://img.fenhongshop.com/goods/50113/20140717/53c775cddd7e9.jpg\",
+                \"goods_origin\": \"189\",
+                \"nation_name\": \"国内\",
+                \"nation_flag\": \"http://pic.fenhongshop.com/tags/20160613/575e522e4b220.png\",
+                \"groupbuy_flag\": 0,
+                \"xianshi_flag\": 0,
+                \"seckilling_flag\": 0,
+                \"is_import\": 0,
+                \"goods_promise\": \"国内精选 质量保证\"
+            },
+            {
+                \"goods_id\": \"20\",
+                \"goods_name\": \"玛丽蓝莓酒-蓝瓶\",
+                \"goods_price\": \"215.00\",
+                \"goods_promotion_price\": \"215.00\",
+                \"goods_marketprice\": \"298.00\",
+                \"goods_image\": \"http://img.fenhongshop.com/goods/251153/20140904/540809b59e6f1.jpg\",
+                \"goods_origin\": \"189\",
+                \"nation_name\": \"国内\",
+                \"nation_flag\": \"http://pic.fenhongshop.com/tags/20160613/575e522e4b220.png\",
+                \"groupbuy_flag\": 0,
+                \"xianshi_flag\": 0,
+                \"seckilling_flag\": 0,
+                \"is_import\": 0,
+                \"goods_promise\": \"国内精选 质量保证\"
+            },
+            {
+                \"goods_id\": \"23\",
+                \"goods_name\": \"约克公爵实木家具欧美田园DY02-76床头柜正品\",
+                \"goods_price\": \"2635.00\",
+                \"goods_promotion_price\": \"2635.00\",
+                \"goods_marketprice\": \"2635.00\",
+                \"goods_image\": \"http://img.fenhongshop.com/goods/50113/20140717/53c775cd66b51.jpg\",
+                \"goods_origin\": \"189\",
+                \"nation_name\": \"国内\",
+                \"nation_flag\": \"http://pic.fenhongshop.com/tags/20160613/575e522e4b220.png\",
+                \"groupbuy_flag\": 0,
+                \"xianshi_flag\": 0,
+                \"seckilling_flag\": 0,
+                \"is_import\": 0,
+                \"goods_promise\": \"国内精选 质量保证\"
+            }
+        ]
+    },
+    {
+        \"id\": \"1\",
+        \"mid\": \"188\",
+        \"store_id\": \"50092\",
+        \"type_id\": \"1\",
+        \"content\": \"http://pic.fenhongshop.com/tags/20160718/578c43c0ac54d.jpg\",
+        \"isshow\": \"1\",
+        \"sort\": \"2\",
+        \"goods_url\": \"http://test.fenhongshop.com/shop/index.php?goods_id=16!goodsdetail\"
+    },
+    {
+        \"id\": \"3\",
+        \"mid\": \"188\",
+        \"store_id\": \"50092\",
+        \"type_id\": \"1\",
+        \"content\": \"http://pic.fenhongshop.com/tags/20160718/578c43c0ac54d.jpg\",
+        \"isshow\": \"1\",
+        \"sort\": \"3\",
+        \"goods_url\": \"http://test.fenhongshop.com/shop/index.php?goods_id=14639!goodsdetail\"
+    }
+]
+        ]]> </Data>
+    </string>
+</resources>

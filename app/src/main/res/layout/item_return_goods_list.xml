@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--店铺名称、退款状态-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tv_icon_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_store"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_5"
+            android:text="这里放置店铺名称"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tv_shop_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="申请成功"
+            android:textColor="@color/color_lv"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_1"
+        android:background="@color/com_bg" />
+
+    <TextView
+        android:id="@+id/tv_all_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_of_10"
+        android:text="@string/app_name"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LGoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="@dimen/dp_of_60"
+            android:layout_height="@dimen/dp_of_60"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_goods_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/nine"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_padding_4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_subtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/tv_memo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/num_buy"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="@dimen/dp_of_70"
+                android:layout_height="@dimen/dp_of_25"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginTop="@dimen/tv_padding_4"
+                android:background="@drawable/shape_redsolid_corner"
+                android:gravity="center"
+                android:text="@string/lbl_service_pay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_12"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_1"
+        android:background="@color/com_bg" />
+
+    <!--交易金额和退款金额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/return_goods_money_"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12" />
+
+                <TextView
+                    android:id="@+id/tv_refund_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/zero"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/return_goods_num_"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12" />
+
+                <TextView
+                    android:id="@+id/tv_refund_sn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/zero"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_see_process"
+            android:layout_width="@dimen/dp_of_90"
+            android:layout_height="@dimen/dp_of_34"
+            android:background="@drawable/shape_redsolid_corner"
+            android:gravity="center"
+            android:text="@string/see_process"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_8"
+        android:background="@color/com_bg" />
+</LinearLayout>

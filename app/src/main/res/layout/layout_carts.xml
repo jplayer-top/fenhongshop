@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RcvCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/LNoresult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/tv_padding">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cart_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_23"
+            android:text="@string/cart_empty"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_of_30">
+
+            <TextView
+                android:id="@+id/tv_around"
+                android:layout_width="@dimen/dp_of_110"
+                android:layout_height="@dimen/dp_of_38"
+                android:background="@drawable/shape_redstroke_corner"
+                android:gravity="center"
+                android:text="@string/look_around"
+                android:textColor="@color/fh_red" />
+
+            <TextView
+                android:id="@+id/tv_fav"
+                android:layout_width="@dimen/dp_of_110"
+                android:layout_height="@dimen/dp_of_38"
+                android:layout_marginLeft="@dimen/dp_of_30"
+                android:background="@drawable/shape_redstroke_corner"
+                android:gravity="center"
+                android:text="@string/look_fav"
+                android:textColor="@color/fh_red" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_35"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_34"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_13" />
+
+            <View
+                android:id="@+id/vAll"
+                android:layout_width="@dimen/dp_of_60"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@color/fh_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_34"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_13" />
+
+            <View
+                android:id="@+id/vPay"
+                android:layout_width="@dimen/dp_of_60"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_34"
+                android:gravity="center"
+                android:text="待发货"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_13" />
+
+            <View
+                android:id="@+id/vDelivery"
+                android:layout_width="@dimen/dp_of_60"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRecept"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_34"
+                android:gravity="center"
+                android:text="待收货"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_13" />
+
+            <View
+                android:id="@+id/vRecept"
+                android:layout_width="@dimen/dp_of_60"
+                android:layout_height="@dimen/dp_of_1"
+                android:background="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/layout_noresult"
+        app:msv_errorView="@layout/layout_error"
+        app:msv_loadingView="@layout/layout_loading"
+        app:msv_viewState="content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+                android:id="@+id/pullToRefreshRecycleView"
+                style="@style/FHRefreshStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btnBackTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_top"
+                android:visibility="visible" />
+        </FrameLayout>
+
+    </com.kennyc.view.MultiStateView>
+</LinearLayout>

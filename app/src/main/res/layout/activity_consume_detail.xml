@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_of_10"
+        android:background="@drawable/shape_consumedetail_corner"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出账金额"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="500.00"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_of_10"
+        android:background="@drawable/shape_consumedetail_corner"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="支出"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="2016-12-08 11:11:11"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易单号"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvSN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="4908239977000043"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余余额"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvLeft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="500.00"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

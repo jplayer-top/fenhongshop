@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/sdv"
+                android:layout_width="@dimen/dp_of_150"
+                android:layout_height="@dimen/dp_of_150"
+                android:src="@drawable/default_goods_img"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/iv_top"
+                android:contentDescription="@string/app_name"
+                android:layout_width="@dimen/dp_of_60"
+                android:layout_height="@dimen/dp_of_60"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_flag_nation"
+                    android:layout_width="@dimen/dp_of_20"
+                    android:layout_height="@dimen/dp_of_14"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_banner" />
+
+                <TextView
+                    android:id="@+id/tv_nation_desc"
+                    android:text="韩国直邮 正品保证"
+                    android:layout_marginLeft="@dimen/tv_padding"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_of_14"
+                    android:textColor="@color/color_99"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:lines="3"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/dp_of_1"
+                android:paddingTop="@dimen/dp_of_1"
+                android:text="ORIHIRO 进口低分子玻尿酸胶原蛋白180g/袋"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_15"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="¥1105"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_15"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_price_market"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="¥1215"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_13" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_width="@dimen/dp_of_90"
+                android:layout_height="@dimen/dp_of_27"
+                android:background="@color/fh_red"
+                android:gravity="center"
+                android:text="@string/view_dtl"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_flag_global"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/qrcode_cancel"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginTop="@dimen/tv_padding_4"
+        android:src="@drawable/flag_global"
+        android:visibility="visible" />
+</FrameLayout>

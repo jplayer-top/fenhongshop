@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LBot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/eva_shop"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/eva_desc_score"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <RatingBar
+                android:id="@+id/rating_desc"
+                style="@style/FHRatingbarEVA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:rating="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/eva_service_score"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <RatingBar
+                android:id="@+id/rating_service"
+                style="@style/FHRatingbarEVA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:rating="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/eva_release_score"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <RatingBar
+                android:id="@+id/rating_release"
+                style="@style/FHRatingbarEVA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:rating="5" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/mCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:layout_marginBottom="@dimen/dp_of_10"
+            android:button="@drawable/selector_checkbox_red_gray"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/evaluate_anonymous"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_40"
+        android:layout_marginBottom="@dimen/dp_of_20"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <Button
+            android:id="@+id/btn_subimt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:background="@drawable/selector_btn_red"
+            android:text="@string/evaluate_submit"
+            android:textColor="@color/selector_btn_red_color"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+</LinearLayout>

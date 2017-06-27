@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LDoing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@style/FHProgressBar"
+            android:id="@+id/pb" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:id="@+id/iv_refresh"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/a_time"
+            android:src="@drawable/networkerror" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:text="@string/doing"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_bg"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mrecycle"
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_48" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

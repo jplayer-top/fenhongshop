@@ -1,0 +1,8 @@
+<ImageView
+    android:id="@+id/my_image_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scaleType="fitXY"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/default_banner"/>

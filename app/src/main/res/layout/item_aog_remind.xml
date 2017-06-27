@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dp_of_15"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:layout_marginBottom="@dimen/dp_of_1"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:button="@drawable/selector_checkbox_red_gray"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"/>
+        
+        <FrameLayout
+            android:layout_width="@dimen/dp_of_85"
+            android:layout_height="@dimen/dp_of_85"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivGoodsImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/default_goods_img"/>
+
+            <ImageView
+                android:id="@+id/ivCover"
+                android:layout_width="@dimen/dp_of_45"
+                android:layout_height="@dimen/dp_of_45"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingBottom="@dimen/dp_of_1"
+                    android:text="@string/test"
+                    android:textSize="@dimen/sp_of_14"/>
+
+                <ImageView
+                    android:id="@+id/ivFlagNation"
+                    android:scaleType="fitXY"
+                    android:layout_width="@dimen/dp_of_20"
+                    android:layout_height="@dimen/dp_of_14"
+                    android:layout_marginTop="@dimen/dp_of_2"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/default_goods_img" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="¥"
+                    android:textSize="@dimen/sp_of_12"
+                    android:textColor="@color/fh_red"/>
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_2"
+                    android:text="3600.00"
+                    android:textSize="@dimen/sp_of_16"
+                    android:textColor="@color/fh_red"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/crazy_replenishment"
+                    android:textSize="@dimen/sp_of_12"
+                    android:textColor="@color/color_bb"/>
+
+                <TextView
+                    android:id="@+id/tvCancelNotice"
+                    android:layout_width="@dimen/dp_of_60"
+                    android:layout_height="@dimen/dp_of_20"
+                    android:background="@drawable/shape_gray99_stroke_corner"
+                    android:gravity="center"
+                    android:text="@string/cancel_remind"
+                    android:textSize="@dimen/sp_of_12"
+                    android:textColor="@color/color_99"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

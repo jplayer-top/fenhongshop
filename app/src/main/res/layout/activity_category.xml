@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/LTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/tv_padding_4">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp_of_46"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <LinearLayout
+            android:id="@+id/LSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_padding"
+            android:layout_marginRight="@dimen/tv_padding"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rect_round"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            android:padding="@dimen/tv_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/tv_padding"
+                android:gravity="center"
+                android:text="@string/if_icon_search"
+                android:textColor="@color/color_bb"
+                android:textSize="@dimen/comtop_headtv_size" />
+
+            <EditText
+                android:id="@+id/et_key"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/app_name"
+                android:padding="@dimen/tv_padding_3"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_of_2"
+            android:gravity="center"
+            android:text="@string/if_more"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_3" />
+    </LinearLayout>
+
+    <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+        android:id="@+id/pullToRefreshRecycleView"
+        style="@style/FHRefreshStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

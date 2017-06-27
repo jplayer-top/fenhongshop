@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 22
+    }
+}
+
+dependencies {
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+}
+
+//apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dp_of_50"
+        android:layout_height="@dimen/dp_of_50"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/default_goods_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Michael Kors迈克科尔斯女士单肩 时尚新款手提包真皮女包"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_4"
+            android:text="x 1"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+</LinearLayout>

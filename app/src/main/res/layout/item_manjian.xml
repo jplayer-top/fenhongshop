@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LManjian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_of_50"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tv_padding"
+        android:paddingRight="@dimen/tv_padding"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvManjianLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:text="@string/lbl_manjian"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tvManjian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_18"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_18"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:text="满2000减15"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/vManjian"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/tv_padding"
+        android:layout_marginRight="@dimen/tv_padding"
+        android:background="@color/color_e3"
+        android:visibility="visible" />
+</LinearLayout>

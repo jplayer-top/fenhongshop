@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_index"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:layout_marginTop="@dimen/dp_of_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:text="套装一"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_16" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_price_taozhuang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:text="套装价：xxx"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_16" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tv_price_original_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/price_original"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_16" />
+
+        <TextView
+            android:id="@+id/tv_price_original"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_toRightOf="@id/tv_price_original_title"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_16" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="AAA"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:layout_margin="@dimen/dp_of_20"
+        android:background="@drawable/selector_redsolid_corner"
+        android:gravity="center"
+        android:text="@string/add_2_cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_of_18" />
+</LinearLayout>

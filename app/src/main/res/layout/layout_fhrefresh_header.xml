@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_20"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fh_refresh_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tv_padding"
+        android:layout_marginTop="@dimen/tv_padding"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dp_of_50"
+            android:layout_height="@dimen/line_width_1"
+            android:background="@color/color_e3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_padding"
+            android:layout_marginRight="@dimen/tv_padding"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fh_refresh_tips" />
+
+        <View
+            android:layout_width="@dimen/dp_of_50"
+            android:layout_height="@dimen/line_width_1"
+            android:background="@color/color_e3" />
+    </LinearLayout>
+</LinearLayout>

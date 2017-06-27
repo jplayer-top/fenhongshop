@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingBottom="@dimen/dp_of_60"
+    android:paddingLeft="@dimen/dp_of_20"
+    android:paddingRight="@dimen/dp_of_10"
+    android:paddingTop="@dimen/dp_of_50">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:paddingRight="@dimen/dp_of_10"
+                android:paddingTop="@dimen/dp_of_10"
+                android:text="@string/merchantin_service_explain"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_16" />
+
+            <TextView
+                android:id="@+id/text_inland01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_of_10"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/text_inland02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_of_10"
+                android:text="@string/merchantin_service_explain"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_close_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:background="@drawable/shape_circle_all_white"
+        android:text="@string/if_error"
+        android:textColor="@color/fh_red"
+        android:textSize="@dimen/sp_of_20" />
+</FrameLayout>

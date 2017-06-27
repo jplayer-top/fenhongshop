@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimUp" parent="@android:style/Theme.Translucent">
+        <item name="android:windowAnimationStyle">@style/DropDownUp</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--<item name="android:taskOpenExitAnimation">@anim/slide_out_down</item>-->
+    <style name="DropDownUp" parent="@android:style/Animation">
+        <item name="android:taskOpenEnterAnimation">@anim/slide_in_up</item>
+    </style>
+
+    <!--RatingBar 样式-->
+    <style name="FHRatingbar" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/selector_ratingbar</item>
+        <item name="android:isIndicator">true</item>
+        <item name="android:stepSize">0.1</item>
+        <item name="android:numStars">5</item>
+        <item name="android:minHeight">@dimen/dp_of_20</item>
+        <item name="android:maxHeight">@dimen/dp_of_20</item>
+    </style>
+
+    <style name="FHRatingbarEVA" parent="android:Widget.Holo.Light.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/selector_ratingbar</item>
+        <item name="android:isIndicator">false</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:minHeight">@dimen/dp_of_20</item>
+        <item name="android:maxHeight">@dimen/dp_of_20</item>
+    </style>
+
+    <style name="Theme.fhloading" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/img_loading</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Start" parent="android:Theme">
+        　　
+        <item name="android:windowNoTitle">true</item>
+        　　
+        <item name="android:windowBackground">@color/transparent</item>
+        　　
+        <item name="android:windowIsTranslucent">true</item>
+        　　
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!--秒杀样式-->
+    <style name="MiaoshaRangeItem">
+        <item name="android:layout_width">@dimen/dp_of_75</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/dp_of_48</item>
+        <item name="android:background">@drawable/selector_red_25</item>
+    </style>
+
+    <style name="MiaoshaRange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_of_18</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MiaoshaState">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_of_12</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--导航样式-->
+    <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">@dimen/sp_of_14</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="FHProgressBar">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/dp_of_40</item>
+        <item name="android:layout_height">@dimen/dp_of_40</item>
+        <item name="android:indeterminateDrawable">@drawable/fhprogressbar</item>
+        <item name="android:background">@drawable/loading_icon</item>
+    </style>
+
+    <!--我的收藏导航菜单样式-->
+    <style name="CollectionsIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CollectionsTabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CollectionsTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:textAppearance">@style/CollectionsTabPageIndicator.Text</item>
+        <item name="android:textSize">@dimen/sp_of_14</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CollectionsTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext_collections</item>
+    </style>
+
+    <style name="FHRefreshStyle">
+        <item name="ptrDrawableStart">@drawable/icon_refresh_arrow</item>
+        <item name="ptrDrawableEnd">@drawable/refresh_arrow_normal</item>
+        <item name="ptrRefreshTop">@drawable/icon_refresh_top</item>
+        <item name="ptrProgressIndeterminateDrawable">@drawable/fhrefreshprogress</item>
+        <item name="ptrShowRefreshTips">false</item>
+        <item name="ptrAnimationStyle">flip</item>
+    </style>
+
+    <style name="FHSearchContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_of_30</item>
+        <item name="android:background">@drawable/shape_grey_stroke_corner</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/tv_padding</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="FHSearchIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/if_icon_search</item>
+        <item name="android:textSize">@dimen/sp_of_13</item>
+        <item name="android:textColor">@color/color_99</item>
+    </style>
+
+    <style name="FHSearchTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_of_10</item>
+        <item name="android:textColor">@color/color_99</item>
+        <item name="android:textSize">@dimen/sp_of_13</item>
+    </style>
+
+    <style name="FHHorizonalProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_of_1</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/style_fh_progressbar</item>
+    </style>
+
+    <!--急速免税店导航样式 DutyFree-->
+    <style name="DFStyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/DFCustomTabPageIndicator</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DFCustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/duty_tab_indicator</item>
+        <item name="android:textAppearance">@style/DFCustomTabPageIndicator.Text</item>
+        <item name="android:textSize">@dimen/sp_of_14</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="DFCustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@drawable/selector_duty_tabtext</item>
+    </style>
+
+    <!-- 弹出框动画 由下至上 -->
+    <style name="FHDialog.Anim" parent="@android:style/Animation.Dialog">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="FHInnerDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+</resources>

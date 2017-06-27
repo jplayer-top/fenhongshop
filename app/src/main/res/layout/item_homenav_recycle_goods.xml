@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="@dimen/dp_of_170"
+        android:layout_width="@dimen/dp_of_140"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivGoodsImage"
+            android:layout_width="@dimen/dp_of_80"
+            android:layout_height="@dimen/dp_of_80"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_goods_img" />
+
+        <TextView
+            android:id="@+id/tvGoodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_12"
+            android:gravity="center"
+            android:lines="2"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10"
+            android:text="美迪惠尔面膜\n面膜鼻祖"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_12"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGoodsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥34.55"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_12" />
+
+            <TextView
+                android:id="@+id/tvMarketPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tv_padding_3"
+                android:text="¥55.55"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_10" />v
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg">
+
+    <LinearLayout
+        android:id="@+id/LDoing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@style/FHProgressBar"
+            android:id="@+id/progressBar" />
+
+        <ImageView
+            android:id="@+id/ivRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_of_50"
+            android:layout_marginTop="@dimen/dp_of_25"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/networkerror"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRefresh"
+            android:layout_width="@dimen/reload_text_width"
+            android:layout_height="@dimen/reload_text_height"
+            android:background="@drawable/shape_redstroke_corner"
+            android:gravity="center"
+            android:text="@string/load_again"
+            android:textColor="@color/fh_red" />
+    </LinearLayout>
+
+    <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshPinnedHeaderListView
+        android:id="@+id/pinnedListView"
+        style="@style/FHRefreshStyle"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnBackTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        android:background="@drawable/back_top"
+        android:visibility="visible" />
+</FrameLayout>

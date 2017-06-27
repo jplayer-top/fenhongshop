@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_bb">#BBBBBB</color>
+    <color name="transparent_B2">#B2000000</color>
+</resources>

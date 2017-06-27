@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_grayee_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+
+        <ImageView
+            android:id="@+id/sdv"
+            android:layout_width="@dimen/dp_of_62"
+            android:layout_height="@dimen/dp_of_62"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_goods_img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:gravity="left|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/placeholderRight"
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+

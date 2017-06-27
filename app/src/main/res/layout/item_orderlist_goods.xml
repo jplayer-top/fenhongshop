@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_90"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_15">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/dp_of_60"
+            android:layout_height="@dimen/dp_of_60"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_goods_img" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.5"
+            android:lines="2"
+            android:text="函数（function清末根据日语翻译+英语读音译为“方程”），名称出自数学家李善兰的著作《代数学》。"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_of_10">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:text="¥60.00"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="X1"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@color/color_e3" />
+</LinearLayout>

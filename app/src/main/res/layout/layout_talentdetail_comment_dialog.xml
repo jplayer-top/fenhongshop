@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LSubContainer"
+        android:layout_width="@dimen/dp_of_200"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_whitesolid_corner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tvReply"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/lbl_reply" />
+
+        <TextView
+            android:id="@+id/tvCopy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/copy" />
+
+        <TextView
+            android:id="@+id/tvJuBao"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/lbl_jubao" />
+
+    </LinearLayout>
+</LinearLayout>

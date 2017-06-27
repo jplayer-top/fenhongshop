@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_16"
+        android:paddingTop="@dimen/dp_of_16">
+
+        <com.fanglin.fhui.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="@dimen/dp_of_35"
+            android:layout_height="@dimen/dp_of_35"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_avatar"
+            android:visibility="visible"
+            app:border_color="@color/white"
+            app:border_width="@dimen/line_width" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_of_9"
+                android:drawableRight="@drawable/icon_louzhu"
+                android:text="大王叫我来巡山"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_13" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:text="27分钟前"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/sp_of_11" />
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_16"
+                android:text="回复哈哈哈:妥妥的好"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LZan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivZan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/selector_zan" />
+
+            <TextView
+                android:id="@+id/tvNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_6"
+                android:text="999"
+                android:textColor="@color/selector_red_c99" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:background="@color/color_e3" />
+</LinearLayout>

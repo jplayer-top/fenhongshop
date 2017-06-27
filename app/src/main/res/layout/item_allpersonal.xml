@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llAllPersonal"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/dp_of_26"
+        android:layout_marginLeft="@dimen/dp_of_9"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:background="@drawable/shape_allperson"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:src="@drawable/shape_wightdit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:text="已经累计邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_12" />
+
+        <TextView
+            android:id="@+id/tvPersonalCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_12" />
+    </LinearLayout>
+</LinearLayout>

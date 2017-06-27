@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_of_10"
+        android:singleLine="true"
+        android:text="@string/fmt_setpwd_phone"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_14" />
+
+    <LinearLayout
+        android:id="@+id/LImgCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_35"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:layout_marginTop="@dimen/dp_of_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_white"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etImgCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/hint_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/dp_of_10"
+                android:singleLine="true"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_of_14" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imgCode"
+            android:layout_width="@dimen/dp_of_97"
+            android:layout_height="@dimen/dp_of_31"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_captcha"
+            android:text="@string/get_code"
+            android:textColor="@color/selector_btn_red_color"
+            android:textSize="@dimen/sp_of_14" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_35"
+            android:layout_weight="1"
+            android:background="@drawable/shape_btn_white"
+            android:hint="@string/hint_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="@dimen/dp_of_10"
+            android:singleLine="true"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/btnCode"
+            android:layout_width="@dimen/dp_of_97"
+            android:layout_height="@dimen/dp_of_35"
+            android:layout_marginLeft="@dimen/dp_of_12"
+            android:background="@drawable/selector_code_button"
+            android:gravity="center"
+            android:text="@string/get_code"
+            android:textColor="@color/selector_txtcolor_btncode"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dp_of_10"
+        android:text="@string/apaypwd"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_14" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:background="@color/white"
+        android:hint="@string/hint_input_paypwd"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:digits="@string/chars_allow"
+        android:padding="@dimen/dp_of_10"
+        android:singleLine="true"
+        android:textColorHint="@color/color_e3"
+        android:textSize="@dimen/sp_of_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        android:background="@color/color_e3" />
+
+    <EditText
+        android:id="@+id/et_cfrm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:background="@color/white"
+        android:hint="@string/hint_cfrm_paypwd"
+        android:digits="@string/chars_allow"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:padding="@dimen/dp_of_10"
+        android:singleLine="true"
+        android:textColorHint="@color/color_e3"
+        android:textSize="@dimen/sp_of_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_50"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:background="@drawable/selector_btn_red"
+            android:text="@string/submit"
+            android:textColor="@color/selector_btn_red_color" />
+    </LinearLayout>
+</LinearLayout>

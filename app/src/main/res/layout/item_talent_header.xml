@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/talentHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/line_width"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_35"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vHideTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_70"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp_of_200"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:layout_marginTop="@dimen/dp_of_60"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dp_of_125"
+                    android:singleLine="true"
+                    android:text="抹抹茶er"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_23" />
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_of_20"
+                    android:paddingLeft="@dimen/dp_of_10"
+                    android:paddingRight="@dimen/dp_of_10"
+                    android:text="吃土少女？的日常吃土少女？的日常就是吃喝玩乐睡吃喝玩乐睡哈哈这就是人生的追求人生的追求人生生的追求人生生" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_of_31"
+                    android:layout_marginTop="@dimen/dp_of_40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/LTimes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/talent_times"
+                            android:textColor="@color/color_99"
+                            android:textSize="@dimen/sp_of_12" />
+
+                        <TextView
+                            android:id="@+id/tvTimes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_of_15"
+                            android:text="1024"
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/sp_of_23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LFans"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/talent_fans"
+                            android:textColor="@color/color_99"
+                            android:textSize="@dimen/sp_of_12" />
+
+                        <TextView
+                            android:id="@+id/tvFans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_of_15"
+                            android:text="233"
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/sp_of_23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LGoods"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/talent_goods"
+                            android:textColor="@color/color_99"
+                            android:textSize="@dimen/sp_of_12" />
+
+                        <TextView
+                            android:id="@+id/tvGoods"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_of_15"
+                            android:text="1024"
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/sp_of_23" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.fanglin.fhui.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="@dimen/dp_of_70"
+            android:layout_height="@dimen/dp_of_70"
+            android:layout_marginLeft="@dimen/dp_of_15"
+            android:layout_marginTop="@dimen/dp_of_70"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_avatar"
+            android:visibility="visible"
+            app:border_color="@color/white"
+            app:border_width="@dimen/line_width" />
+
+        <LinearLayout
+            android:id="@+id/LEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_120"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_edit_talent"
+                android:drawablePadding="@dimen/dp_of_5"
+                android:text="@string/edit"
+                android:textColor="@color/color_99"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvCommission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_14"
+                android:drawableLeft="@drawable/icon_commission_talent"
+                android:drawablePadding="@dimen/dp_of_5"
+                android:text="@string/commission_query"
+                android:textColor="@color/color_99"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/LFocus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvSlide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_slideup"
+                    android:drawablePadding="@dimen/tv_padding"
+                    android:text="@string/tips_talenthome_slide"
+                    android:textColor="@color/color_66"
+                    android:textSize="@dimen/sp_of_13" />
+
+                <Button
+                    android:id="@+id/btnFocus"
+                    android:layout_width="@dimen/dp_of_110"
+                    android:layout_height="@dimen/dp_of_40"
+                    android:layout_marginTop="@dimen/dp_of_20"
+                    android:background="@drawable/selector_talenthome_focusbtn"
+                    android:text="+关注"
+                    android:textColor="@color/selector_talenthome_focusbtn_selected" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/vHideBot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10"
+        android:background="@color/white" />
+</LinearLayout>

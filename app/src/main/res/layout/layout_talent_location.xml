@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LContainer"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LSubContainer"
+        android:layout_width="@dimen/dp_of_200"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_whitesolid_corner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tvNotLoc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/lbl_locating_failure" />
+
+        <TextView
+            android:id="@+id/tvUseLoc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:gravity="center"
+            android:text="使用【青岛 青岛大学】" />
+
+        <TextView
+            android:id="@+id/tvReLoc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/tv_padding"
+            android:gravity="center"
+            android:text="@string/lbl_relocating" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/line_width"
+        android:layout_height="@dimen/line_width" />
+</LinearLayout>

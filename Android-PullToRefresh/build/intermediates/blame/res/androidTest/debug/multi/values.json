@@ -1,0 +1,273 @@
+[
+    {
+        "outputFile": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1894,
+                    "endColumn": 63,
+                    "endOffset": 1953
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1894,
+                        "endColumn": 63,
+                        "endOffset": 1953
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1958,
+                    "endColumn": 63,
+                    "endOffset": 2017
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1958,
+                        "endColumn": 63,
+                        "endOffset": 2017
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 2022,
+                    "endColumn": 54,
+                    "endOffset": 2072
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2022,
+                        "endColumn": 54,
+                        "endOffset": 2072
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2077,
+                    "endColumn": 56,
+                    "endOffset": 2129
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2077,
+                        "endColumn": 56,
+                        "endOffset": 2129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 2134,
+                    "endColumn": 54,
+                    "endOffset": 2184
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2134,
+                        "endColumn": 54,
+                        "endOffset": 2184
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2189,
+                    "endColumn": 37,
+                    "endOffset": 2222
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2189,
+                        "endColumn": 37,
+                        "endOffset": 2222
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2227,
+                    "endColumn": 39,
+                    "endOffset": 2262
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2227,
+                        "endColumn": 39,
+                        "endOffset": 2262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2267,
+                    "endColumn": 36,
+                    "endOffset": 2299
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2267,
+                        "endColumn": 36,
+                        "endOffset": 2299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2304,
+                    "endColumn": 87,
+                    "endOffset": 2387
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 2304,
+                        "endColumn": 87,
+                        "endOffset": 2387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2392,
+                    "endColumn": 83,
+                    "endOffset": 2471
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 2392,
+                        "endColumn": 83,
+                        "endOffset": 2471
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2476,
+                    "endColumn": 90,
+                    "endOffset": 2562
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 2476,
+                        "endColumn": 90,
+                        "endOffset": 2562
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2567,
+                    "endColumn": 71,
+                    "endOffset": 2634
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 2567,
+                        "endColumn": 71,
+                        "endOffset": 2634
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2639,
+                    "endColumn": 69,
+                    "endOffset": 2704
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 2639,
+                        "endColumn": 69,
+                        "endOffset": 2704
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2709,
+                    "endColumn": 77,
+                    "endOffset": 2782
+                },
+                "from": {
+                    "file": "D:\\fanglin\\fenhong-android\\FHMall\\src\\microbuyer\\Android-PullToRefresh\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2709,
+                        "endColumn": 77,
+                        "endOffset": 2782
+                    }
+                }
+            }
+        ]
+    }
+]

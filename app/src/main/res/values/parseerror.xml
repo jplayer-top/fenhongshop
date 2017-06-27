@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="perr_of_1000002">手机号已被注册</string>
+    <string name="perr_of_1000009">第三方账号绑定失败</string>
+    <string name="perr_of_1000010">第三方账号尚未绑定</string>
+    <string name="perr_of_1000011">手机号尚未注册</string>
+</resources>

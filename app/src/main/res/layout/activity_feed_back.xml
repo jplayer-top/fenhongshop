@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:text="@string/feed_back_content"
+            android:textSize="@dimen/dp_of_14"
+            android:textColor="@color/color_33"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dp_of_10">
+
+            <TextView
+                android:id="@+id/tv_icon_quto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp_of_10"
+                android:text="@string/if_quto"
+                android:textColor="@color/color_99"
+                android:textSize="@dimen/dp_of_14"/>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minLines="5"
+                android:maxLength="200"
+                android:gravity="top"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/dp_of_5"
+                android:hint="@string/feed_back_content_hint"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/dp_of_14"
+                android:textColor="@color/color_33"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="@dimen/dp_of_10"
+            android:background="@color/white"
+            android:textSize="@dimen/dp_of_10"
+            android:textColor="@color/color_99"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:text="@string/contact"
+            android:textSize="@dimen/dp_of_14"
+            android:textColor="@color/color_33"/>
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_50"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10"
+            android:hint="@string/contact_hint"
+            android:textColorHint="@color/color_99"
+            android:textSize="@dimen/dp_of_14"
+            android:textColor="@color/color_33"/>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginTop="@dimen/dp_of_100"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:gravity="center"
+            android:background="@drawable/selector_redsolid_corner"
+            android:text="@string/feed_back_submit"
+            android:textSize="@dimen/dp_of_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

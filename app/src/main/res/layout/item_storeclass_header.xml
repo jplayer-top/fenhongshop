@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_10"
+        android:background="@color/com_bg" />
+
+    <LinearLayout
+        android:id="@+id/LContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_of_7"
+        android:paddingRight="@dimen/dp_of_7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:textSize="@dimen/sp_of_15"
+            android:textColor="@color/color_33"
+            android:layout_width="wrap_content"
+            android:text="休闲零食"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvMore"
+            android:layout_width="match_parent"
+            android:text="查看全部"
+            android:gravity="right|center"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_13"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

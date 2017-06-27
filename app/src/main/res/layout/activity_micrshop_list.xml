@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_of_9"
+            android:drawableTop="@drawable/selector_microshop_shop"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_of_12"
+            android:paddingTop="@dimen/dp_of_12"
+            android:text="@string/microshop"
+            android:textColor="@color/selector_red_black"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvCommission"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_of_9"
+            android:drawableTop="@drawable/selector_microshop_commission"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_of_12"
+            android:paddingTop="@dimen/dp_of_12"
+            android:text="@string/my_commission"
+            android:textColor="@color/selector_red_black"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tvTeam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dp_of_9"
+            android:drawableTop="@drawable/selector_microshop_team"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_of_12"
+            android:paddingTop="@dimen/dp_of_12"
+            android:text="@string/my_group"
+            android:textColor="@color/selector_red_black"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+</LinearLayout>

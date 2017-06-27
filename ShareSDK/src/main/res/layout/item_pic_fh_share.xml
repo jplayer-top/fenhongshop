@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="fuck"
+        android:scaleType="fitXY"
+        android:src="@mipmap/default_img" />
+
+    <ImageView
+        android:id="@+id/ivChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/image"
+        android:layout_alignTop="@id/image"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="fuck"
+        android:src="@drawable/selector_checkbox" />
+
+</RelativeLayout>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LHold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_tips1"
+                    android:textColor="#a9a9a9"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/Lcompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_company"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/Larea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_addr"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/LAddrdtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_addrdtl"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_addrdtl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/Lcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_contact"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/Lphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_tel"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/Leml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_eml"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_eml"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_tips2"
+                    android:textColor="#a9a9a9"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Llicence"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical"
+                    android:padding="@dimen/tv_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/merchantin_license"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_16"/>
+
+                    <ImageView
+                        android:id="@+id/iv_license"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/qrcode_cancel"
+                        android:src="@drawable/default_goods_img"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/merchantin_license_tips"
+                        android:textColor="#ff4242"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_upload1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="16dp"
+                    android:src="@drawable/icon_upload"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_legal"
+                    android:textColor="#a9a9a9"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/Lcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:padding="@dimen/tv_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:padding="@dimen/tv_padding"
+                    android:text="@string/merchantin_IDNO"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16"/>
+
+                <TextView
+                    android:id="@+id/tv_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:textColor="#a9a9a9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Llegal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical"
+                    android:padding="@dimen/tv_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/merchantin_legal_idcard"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_16"/>
+
+                    <ImageView
+                        android:id="@+id/iv_legal"
+                        android:contentDescription="@string/qrcode_cancel"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_goods_img"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/merchantin_legal_tips"
+                        android:textColor="#ff4242"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_upload2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="16dp"
+                    android:src="@drawable/icon_upload"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/color_e3"/>
+
+            <LinearLayout
+                android:id="@+id/LButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/ck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_checkbox_red_gray"
+                        android:checked="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/tv_padding"
+                        android:text="@string/merchantin_policy"
+                        android:textColor="#a9a9a9"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_next"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/selector_btn_red"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/merchantin_next"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

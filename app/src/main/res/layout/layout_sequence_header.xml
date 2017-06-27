@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_110"
+        android:contentDescription="@string/a_time"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_seq_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_45"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_15"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:id="@+id/tv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_clock"
+            android:textColor="@color/fh_red" />
+
+        <TextView
+            android:id="@+id/tv_miaosha_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_5"
+            android:text="@string/miaosha_coming_desc"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+
+        <TextView
+            android:id="@+id/tv_lbl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/miaosha_time_label"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_13" />
+
+        <TextView
+            android:id="@+id/tv_miaosha_timeleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_5"
+            android:text="@string/miaosha_lefttime"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_13" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3" />
+</LinearLayout>

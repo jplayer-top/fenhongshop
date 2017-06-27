@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_login"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_15" />
+
+            <TextView
+                android:id="@+id/tvAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_40"
+            android:background="@drawable/selector_layout_input_corner"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_of_15"
+            android:paddingRight="@dimen/dp_of_5">
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_input_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:textColor="@color/color_33"
+                android:textColorHint="@color/color_99"
+                android:textSize="@dimen/sp_of_14" />
+
+            <ImageView
+                android:id="@+id/ivClear"
+                android:layout_width="@dimen/dp_of_40"
+                android:layout_height="@dimen/dp_of_40"
+                android:background="@color/white"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:src="@drawable/login_clear" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_16"
+            android:text="@string/lose_password"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_13" />
+
+        <Button
+            android:id="@+id/btnSubimt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_45"
+            android:layout_marginLeft="@dimen/dp_of_20"
+            android:layout_marginRight="@dimen/dp_of_20"
+            android:layout_marginTop="@dimen/dp_of_62"
+            android:background="@drawable/selector_greye6_red_enabled"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_15" />
+    </LinearLayout>
+
+
+</ScrollView>

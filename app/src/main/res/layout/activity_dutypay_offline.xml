@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_of_15"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_whitesolid_corner"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_of_12"
+                android:paddingRight="@dimen/dp_of_12">
+
+                <TextView
+                    android:layout_width="@dimen/dp_of_70"
+                    android:layout_height="wrap_content"
+                    android:text="收款方名称"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_18"
+                    android:text="青岛芳林信息技术有限公司"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginRight="@dimen/dp_of_10"
+                android:background="@color/color_e3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_of_12"
+                android:paddingRight="@dimen/dp_of_12">
+
+                <TextView
+                    android:layout_width="@dimen/dp_of_70"
+                    android:layout_height="wrap_content"
+                    android:text="收款方账号"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvBankNO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_18"
+                    android:text="626 307 898"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginRight="@dimen/dp_of_10"
+                android:background="@color/color_e3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_of_12"
+                android:paddingRight="@dimen/dp_of_12">
+
+                <TextView
+                    android:layout_width="@dimen/dp_of_70"
+                    android:layout_height="wrap_content"
+                    android:text="开户行"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_18"
+                    android:text="中国民生银行青岛分行营业部"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_15"
+            android:background="@drawable/shape_whitesolid_corner"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_of_12"
+                android:paddingRight="@dimen/dp_of_12">
+
+                <TextView
+                    android:layout_width="@dimen/dp_of_70"
+                    android:layout_height="wrap_content"
+                    android:text="订单编号"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvOrderSN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_18"
+                    android:text="39773700776177617"
+                    android:textColor="@color/color_33"
+                    android:textSize="@dimen/sp_of_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginRight="@dimen/dp_of_10"
+                android:background="@color/color_e3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_of_12"
+                android:paddingRight="@dimen/dp_of_12">
+
+                <TextView
+                    android:layout_width="@dimen/dp_of_70"
+                    android:layout_height="wrap_content"
+                    android:text="付款金额"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_14" />
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_18"
+                    android:text="¥ 620.00"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_16" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_15"
+            android:background="@drawable/shape_whitesolid_corner"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/img_pay_offline" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_30">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汇款完成后请将订单号及汇款信息邮件至 "
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_12" />
+
+                <TextView
+                    android:id="@+id/tvEml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fh_service@fenhongshop.com "
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_12" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_kefu_circle" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

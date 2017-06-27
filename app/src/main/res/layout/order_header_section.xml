@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_8"
+        android:background="@color/com_bg" />
+
+    <LinearLayout
+        android:id="@+id/LIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_store"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_16" />
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding_4"
+            android:text="@string/store"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_15" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_of_1"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_statu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tv_padding_4"
+            android:text="@string/store"
+            android:textColor="@color/fh_red"
+            android:textSize="@dimen/sp_of_15" />
+    </LinearLayout>
+</LinearLayout>

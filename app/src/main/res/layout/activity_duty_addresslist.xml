@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+        android:id="@+id/pullToRefreshRecycleView"
+        style="@style/FHRefreshStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_100"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvNew"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_43"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:layout_marginTop="@dimen/dp_of_25"
+            android:background="@drawable/shape_redsolid_corner"
+            android:gravity="center"
+            android:text="+新建地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_17" />
+
+    </LinearLayout>
+</LinearLayout>

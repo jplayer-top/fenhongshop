@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fh_red">#fa2855</color>   <!-- 标准色-->
+    <color name="skybule">#7D9AF4</color>   <!-- 标准色-->
+    <color name="half_red">#80fa2855</color>
+
+    <color name="color_33">#333333</color> <!--标题-->
+    <color name="color_66">#666666</color> <!--次标题-->
+    <color name="color_99">#999999</color> <!--辅助标题-->
+    <color name="color_background">#F6F7FB</color> <!--辅助标题-->
+
+    <color name="color_bb">#bbbbbb</color> <!--不可用状态-->
+    <color name="white">#ffffff</color>
+    <color name="com_bg">#f8f8f8</color>  <!--背景色-->
+    <color name="color_e3">#e3e3e3</color> <!--线条色-->
+
+    <color name="color_e8">#e8e8e8</color>
+
+    <color name="goodsdel_addcart">#FEA17D</color>
+    <color name="color_miaosha_bg">#77FF8F8F</color>
+
+    <color name="color_chi">#f92954</color>
+    <color name="color_cheng">#f9bd39</color>
+    <color name="color_huang">#fa9819</color>
+    <color name="color_lv">#48c914</color>
+    <color name="color_qin">#00FFFF</color>
+    <color name="color_lan">#4bc6ff</color>
+    <color name="color_ccc">#cccccc</color>
+    <color name="color_tccc">#77cccccc</color>
+    <color name="color_zi">#824bfe</color>
+    <color name="color_blue">#6C88E2</color>
+
+    <color name="color_mi">#fcfaca</color>
+
+    <color name="p60_black">#99000000</color>
+    <color name="half_f2">#77f2f2f2</color>
+    <color name="p90_black">#5a000000</color>
+    <color name="color_80percent">#cc000000</color>
+    <color name="color_70percent">#b2000000</color>
+    <color name="white_20percent">#33ffffff</color>
+    <color name="transparent_half">#80000000</color>
+    <color name="transparent_77">#77000000</color>
+    <color name="transparent_7f">#7f000000</color>
+    <color name="transparent_70p">#46000000</color>
+    <color name="transparent_white_77">#77ffffff</color>
+    <color name="transparent_B2">#B2000000</color><!--30%透明-->
+    <color name="transparent_4c">#4c000000</color><!--70%透明-->
+    <color name="transparent_white_B2">#B2ffffff</color>
+    <color name="transparent_fh_red">#B2fa2855</color>
+
+    <color name="weibo">#ffa656</color>
+    <color name="qq">#6abaff</color>
+    <color name="wechat">#35c724</color>
+    <color name="black">#000000</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="bluesky">#DBE1FA</color>
+    <color name="text666">#666666</color>
+    <color name="threelevel">#F59600</color>
+    <color name="onelevel">#FA2855</color>
+
+
+</resources>

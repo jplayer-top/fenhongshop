@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/LManjianAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/color_e3" />
+
+        <LinearLayout
+            android:id="@+id/LBaoyou"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_of_20"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/deliver_free"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvBaoyou"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="满N元包邮"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/tv_padding"
+                android:text="@string/lbl_coudan"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_12" />
+
+            <TextView
+                android:id="@+id/tvIconBaoyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_2right"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vRenxuan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            android:background="@color/color_e3" />
+
+        <LinearLayout
+            android:id="@+id/LRenxuan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_48"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_of_10"
+            android:paddingRight="@dimen/dp_of_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_of_20"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/lbl_renxuan"
+                android:textColor="@color/fh_red"
+                android:textSize="@dimen/sp_of_14" />
+
+            <TextView
+                android:id="@+id/tvRenxuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="再购3件立享， 【99元任选5件】"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_13" />
+
+            <TextView
+                android:id="@+id/tvRenxuanIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/if_2right"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

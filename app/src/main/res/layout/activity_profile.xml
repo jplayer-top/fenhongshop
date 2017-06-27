@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avatar"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_of_14" />
+
+
+        <com.fanglin.fhui.CircleImageView
+            android:id="@+id/sdv"
+            android:layout_width="@dimen/dp_of_30"
+            android:layout_height="@dimen/dp_of_30"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/default_avatar"
+            app:border_color="@color/white"
+            app:border_width="@dimen/line_width_1" />
+
+        <TextView
+            android:id="@+id/tvHeadIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tv_membername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+    <LinearLayout
+        android:id="@+id/LNick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_of_10"
+            android:text="@string/nick"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvNick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|end"
+            android:text="@string/hint_input_nick"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_14" />
+        <TextView
+            android:id="@+id/tvNickIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+    <LinearLayout
+        android:id="@+id/LGender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_gender"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保密"
+            android:gravity="right"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_15" />
+
+
+        <TextView
+            android:id="@+id/tvGenderIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+    <LinearLayout
+        android:id="@+id/LBirth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_birth"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvBirth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/tv_padding"
+            android:singleLine="true"
+            android:text="2016-6-23"
+            android:gravity="right"
+            android:textColor="@color/color_99"
+            android:textSize="@dimen/sp_of_15" />
+
+
+        <TextView
+            android:id="@+id/tvBirthIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width_1"
+        android:background="@color/color_e3" />
+
+
+    <LinearLayout
+        android:id="@+id/LPwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_46"
+        android:layout_marginTop="@dimen/dp_of_8"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_loginpwd"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingLeft="@dimen/tv_padding"
+            android:paddingRight="@dimen/tv_padding"
+            android:singleLine="true"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_14" />
+
+        <TextView
+            android:id="@+id/tvPwdIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_e3"
+            android:textSize="@dimen/sp_of_10" />
+    </LinearLayout>
+
+</LinearLayout>

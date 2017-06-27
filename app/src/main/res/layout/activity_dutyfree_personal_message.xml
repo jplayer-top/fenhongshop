@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_225"
+        android:background="@drawable/my_award">
+
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/dp_of_10"
+                android:layout_height="@dimen/dp_of_20"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:layout_marginTop="@dimen/dp_of_11"
+                android:background="@drawable/icon_back_white"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/dp_of_18"
+            android:layout_height="@dimen/dp_of_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_of_11"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:src="@drawable/icon_order_white" />
+
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_of_103"
+            android:layout_weight="8.81"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="0,000.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_of_24"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_of_72"
+            android:text="@string/myBenus"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_of_44"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vipMoney"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_10" />
+
+            <TextView
+                android:id="@+id/tvAllMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0,000.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_10" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.kennyc.view.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_emptyView="@layout/layout_noresult"
+            app:msv_errorView="@layout/layout_error"
+            app:msv_loadingView="@layout/layout_loading"
+            app:msv_viewState="content">
+
+            <com.fanglin.fenhong.microbuyer.base.baseui.pulltorefresh.PullToRefreshRecycleView
+                android:id="@+id/recyclerView"
+                style="@style/FHRefreshStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.kennyc.view.MultiStateView>
+
+        <LinearLayout
+            android:id="@+id/llAllPersonal"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/dp_of_26"
+            android:layout_marginLeft="@dimen/dp_of_9"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:background="@drawable/shape_allperson"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_of_15"
+                android:src="@drawable/shape_wightdit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_of_10"
+                android:text="已经累计邀请"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_12" />
+
+            <TextView
+                android:id="@+id/tvPersonalCounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_of_12" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

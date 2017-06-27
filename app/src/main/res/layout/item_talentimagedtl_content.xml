@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_360"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:layout_marginTop="@dimen/dp_of_14"
+        android:text="Royal Nectar皇家花蜜蜂毒面膜(*^__^*) 紧致美白 抗皱滋润 蜂毒面膜含麦卢卡蜂蜜，一起舒缓和愈合伤口的特性，它也包含神奇蜂毒成分，能使脸部肌肉紧致、细纹减少。蜂毒是天然的Botox（肉毒杆菌），它轻轻刺痛皮肤，让皮肤留下了刺痛感，从而使人体血液直接流入该部位，刺激胶原蛋白和弹性蛋白的生产，放松和加强肌肉，减少皱纹。而麦卢卡蜂蜜有着众所皆知的天然滋润和修复功效。这些天然的有机成分相结合并协同工作使这一独特的产品能瞬间起着抗衰老的作用。"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_of_13" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_20"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:layout_marginTop="@dimen/dp_of_20"
+        android:text="发布于 昨天 17:30"
+        android:textColor="@color/color_99"
+        android:textSize="@dimen/sp_of_11" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_35"
+        android:layout_marginBottom="@dimen/dp_of_20"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8" />
+</LinearLayout>

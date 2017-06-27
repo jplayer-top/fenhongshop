@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/com_bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_of_5"
+        android:paddingLeft="@dimen/dp_of_10"
+        android:paddingRight="@dimen/dp_of_10"
+        android:paddingTop="@dimen/dp_of_5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_65"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_40"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvBundlingFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/selector_grey_c33_enable"
+                    android:text="@string/lable_buildings"
+                    android:textSize="@dimen/sp_of_15" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="@string/app_name"
+                    android:textColor="@color/selector_enable_33_bb"
+                    android:textSize="@dimen/sp_of_14"
+                    android:textStyle="normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/nine"
+                    android:textColor="@color/selector_enable_red_bb"
+                    android:textSize="@dimen/sp_of_16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_memo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="@dimen/tv_padding"
+                    android:singleLine="true"
+                    android:text="@string/num_buy"
+                    android:textColor="@color/color_99"
+                    android:textSize="@dimen/sp_of_15"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/if_2right"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_bonus_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_of_8"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:text="@string/a_time"
+        android:textSize="@dimen/sp_of_12"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/color_e3"/>
+</LinearLayout>
+

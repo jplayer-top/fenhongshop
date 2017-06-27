@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/LContainer"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="性别选择"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@android:string/cancel"
+        android:scaleType="fitXY"
+        android:src="@drawable/np_dividline" />
+
+    <com.fanglin.fhui.datapicker.NumberPicker
+        android:id="@+id/picker"
+        android:layout_margin="@dimen/custom_dp_of_10"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@android:string/cancel"
+        android:scaleType="fitXY"
+        android:src="@drawable/np_dividline" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back_normal_white_grey"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/back_normal_white_grey"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

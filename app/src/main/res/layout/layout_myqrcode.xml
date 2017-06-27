@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_myqrcode_top"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_of_13"
+                android:layout_marginRight="@dimen/dp_of_13">
+
+                <ImageView
+                    android:id="@+id/ivQrcode"
+                    android:layout_width="@dimen/dp_of_240"
+                    android:layout_height="@dimen/dp_of_240"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_of_20"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_goods_img" />
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="@dimen/dp_of_60"
+                    android:layout_height="@dimen/dp_of_60"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/share_logo" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_60"
+                android:layout_marginLeft="@dimen/dp_of_13"
+                android:layout_marginRight="@dimen/dp_of_13"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.fanglin.fhui.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="@dimen/dp_of_50"
+                    android:layout_height="@dimen/dp_of_50"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/default_avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="大王带我来巡山"
+                        android:textColor="@color/color_33"
+                        android:textSize="@dimen/sp_of_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_of_2"
+                        android:text="@string/tips_myqrcode"
+                        android:textColor="@color/color_99"
+                        android:textSize="@dimen/sp_of_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="@string/qrcode_cancel"
+            android:padding="@dimen/tv_padding"
+            android:src="@drawable/icon_layout_close" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_70"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_myqrcode_bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivWechat"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fhshare_weixin_friend" />
+
+        <ImageView
+            android:id="@+id/ivMoment"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fhshare_friends" />
+
+        <ImageView
+            android:id="@+id/ivQQ"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fhshare_qq_friend" />
+
+        <ImageView
+            android:id="@+id/ivSina"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fhshare_sinaweibo" />
+
+        <ImageView
+            android:id="@+id/ivDownload"
+            android:layout_width="@dimen/dp_of_40"
+            android:layout_height="@dimen/dp_of_40"
+            android:layout_marginLeft="@dimen/dp_of_10"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fhshare_save2phone" />
+    </LinearLayout>
+
+</LinearLayout>

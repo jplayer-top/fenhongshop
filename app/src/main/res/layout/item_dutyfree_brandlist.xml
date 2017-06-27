@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_80"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_of_10">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/dp_of_60"
+            android:layout_height="@dimen/dp_of_60"
+            android:background="@drawable/shape_grey_stroke"
+            android:padding="@dimen/line_width"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_goods_img" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_of_10"
+            android:text="Coreana 高丽雅娜"
+            android:textColor="@color/color_33"
+            android:textSize="@dimen/sp_of_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width" />
+</LinearLayout>

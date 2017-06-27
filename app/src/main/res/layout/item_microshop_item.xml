@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_17"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_of_8"
+        android:paddingRight="@dimen/dp_of_8">
+
+        <ImageView
+            android:id="@+id/ivGoodsImage"
+            android:layout_width="@dimen/dp_of_110"
+            android:layout_height="@dimen/dp_of_110"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/default_goods_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_of_8"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivFlag"
+                    android:layout_width="@dimen/dp_of_20"
+                    android:layout_height="@dimen/dp_of_14"
+                    android:layout_marginTop="@dimen/dp_of_2"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/default_goods_img" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="　  韩国 Michael Kors迈克科尔斯女士单 肩手提包真皮女包" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$99.00"
+                    android:textColor="@color/color_66" />
+
+                <TextView
+                    android:id="@+id/tvCommission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_10"
+                    android:text="奖金 $10.00"
+                    android:textColor="@color/fh_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_12"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/if_wechat"
+                    android:textColor="@color/selector_wechat_selected"
+                    android:textSize="@dimen/sp_of_20" />
+
+                <TextView
+                    android:id="@+id/tvMoments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_8"
+                    android:text="@string/if_wechat_moments"
+                    android:textColor="@color/selector_moments_selected"
+                    android:textSize="@dimen/sp_of_20" />
+
+
+                <TextView
+                    android:id="@+id/tvQzone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_8"
+                    android:text="@string/if_qzone"
+                    android:textColor="@color/selector_qzone_selected"
+                    android:textSize="@dimen/sp_of_20" />
+
+                <TextView
+                    android:id="@+id/tvQq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_8"
+                    android:text="@string/if_qq"
+                    android:textColor="@color/selector_qq_selected"
+                    android:textSize="@dimen/sp_of_20" />
+
+                <TextView
+                    android:id="@+id/tvWeibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_of_8"
+                    android:text="@string/if_weibo"
+                    android:textColor="@color/selector_weibo_selected"
+                    android:textSize="@dimen/sp_of_20" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/line_width"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tvShare"
+                    android:layout_width="@dimen/dp_of_80"
+                    android:layout_height="@dimen/dp_of_30"
+                    android:background="@drawable/shape_redstroke_corner"
+                    android:gravity="center"
+                    android:text="@string/share_again"
+                    android:textColor="@color/fh_red"
+                    android:textSize="@dimen/sp_of_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvStorage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="库存 14"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/dp_of_21"
+            android:background="@color/color_e3" />
+
+        <TextView
+            android:id="@+id/tvClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="浏览 22"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/dp_of_21"
+            android:background="@color/color_e3" />
+
+        <TextView
+            android:id="@+id/tvConllect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="收藏 100"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+
+        <View
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/dp_of_21"
+            android:background="@color/color_e3" />
+
+        <TextView
+            android:id="@+id/tvSales"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="销量 100"
+            android:textColor="@color/color_66"
+            android:textSize="@dimen/sp_of_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/dp_of_8"
+        android:layout_marginRight="@dimen/dp_of_8"
+        android:background="@color/color_e3" />
+</LinearLayout>
